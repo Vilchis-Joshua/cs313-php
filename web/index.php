@@ -1,6 +1,6 @@
 <?php
 
-  echo "CS313 Mobile application"
+  echo "CS313 Mobile application";
   //phpinfo();
 
 ?>
