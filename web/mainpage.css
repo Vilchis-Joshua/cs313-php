@@ -1,5 +1,5 @@
 #intro {
-    color:rgb(0, 255, 0);
+    color:rgb(36, 22, 246);
     text-align: center;
 }
 
@@ -16,4 +16,14 @@ h1 {
 
 tr:nth-child(even) {
     background-color:rgb(171, 167, 167);
+}
+
+#disclaimer {
+    font-size: 10px;
+    bottom: 8px;
+    left: 16px;
+}
+
+body {
+    background: url("https://unsplash.com/photos/gZHeLy52rhc");
 }
