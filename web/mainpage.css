@@ -8,7 +8,7 @@ h1 {
 }
 
 #assignment_link {
-    position:absolute;
+    position:relative;
     bottom: 8px;
     right: 16px;
     font-size: 20px;
@@ -19,7 +19,7 @@ tr:nth-child(even) {
 }
 
 #disclaimer {
-    position: absolute;
+    position: relative;
     font-size: 10px;
     bottom: 8px;
     left: 16px;
