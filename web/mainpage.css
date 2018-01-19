@@ -28,3 +28,8 @@ tr:nth-child(even) {
 body {
     background: url("https://unsplash.com/photos/gZHeLy52rhc");
 }
+
+#mountain_pic {
+    height: 128px;
+    width: 128px;
+}
