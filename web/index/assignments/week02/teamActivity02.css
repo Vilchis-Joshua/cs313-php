@@ -1,0 +1,30 @@
+#hover_alert {
+    background-color:rgb(255, 0, 0);
+    font-size: 60px;
+}
+
+#hover_alert:hover {
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+#css_bold {
+    background-color: rgb(0, 255, 0);
+    font-size: 20px;
+}
+
+#css_bold:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#change_color {
+    background-color: rgb(0, 0, 255);
+    font-size: 120px;
+}
+
+#change_color:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
