@@ -10,7 +10,7 @@ h1 {
 #assignment_link {
     position:relative;
     bottom: 8px;
-    left: 16px;
+    left: 60px;
     font-size: 20px;
 }
 
@@ -26,7 +26,6 @@ tr:nth-child(even) {
 }
 
 body {
-    background: url("https://unsplash.com/photos/gZHeLy52rhc");
 }
 
 #mountain_pic {
