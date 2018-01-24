@@ -1,4 +1,4 @@
-#itemlist {
+#itemlist tr, th{
     border: double black 1px;
 }
 
