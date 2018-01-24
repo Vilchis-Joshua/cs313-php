@@ -1,9 +1,8 @@
 <DOCTYPE! html>
 <head>
-<meta http-eqiv="refresh" content="0; url=https://whispering-plains-28165.herokuapp.com/hello.html" />
 </head>
-<?php
-  echo "Redirecting";
-?>
+<body>
+	<a href="hello.html">Home Page</a>
+</body>
 
 <html>
