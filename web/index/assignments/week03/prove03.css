@@ -1,9 +1,9 @@
-#itemlist tr, th, td{
+#itemlist tr, td{
     border: double black 1px;
 }
 
-#itemlist tr:nth-child(odd) {
-    background: rgb(128, 128, 128);
+#itemlist tr:nth-child(even) {
+    background: rgb(172, 172, 188);
 }
 
 /*#itemlist tr {
