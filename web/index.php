@@ -1,7 +1,9 @@
+<DOCTYPE! html>
+<head>
+<meta http-eqiv="refresh" content="0; url=https://whispering-plains-28165.herokuapp.com/hello.html" />
+</head>
 <?php
-
-  echo "CS313 Mobile application\n";
-  echo "Hello World!";
-  //phpinfo();
-
+  echo "Redirecting";
 ?>
+
+<html>
