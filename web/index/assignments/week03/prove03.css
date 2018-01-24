@@ -1,0 +1,14 @@
+#itemlist tr {
+    color: rgb(40, 31, 241);
+    text-align: center;
+}
+
+#itemlist th {
+    color: rgb(219, 163, 8);
+    text-align: center;
+}
+
+#itemlist th:nth-child(even) {
+    background: rgb(188, 181, 190);
+    text-align: center;
+}
