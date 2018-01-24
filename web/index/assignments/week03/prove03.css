@@ -2,6 +2,10 @@
     border: double black 1px;
 }
 
+#itemlist tr:nth-child(odd) {
+    background: rgb(128, 128, 128);
+}
+
 /*#itemlist tr {
     color: rgb(219, 163, 8);
     text-align: center;
