@@ -1,5 +1,5 @@
 #itemlist {
-    border: double 1px solid;
+    border: double 1px solid black;
 }
 
 #itemlist tr {
@@ -18,4 +18,5 @@
 #itemlist tr:nth-child(even) {
     background: rgb(188, 181, 190);
     text-align: center;
+    color: black;
 }
