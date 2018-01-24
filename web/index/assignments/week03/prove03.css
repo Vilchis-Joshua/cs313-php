@@ -1,6 +1,6 @@
-#itemlist tr, td{
+#itemlist {
     border: double black 1px;
-    column-width: auto;
+    column-width: 20px;
 }
 
 #itemlist tr:nth-child(even) {
