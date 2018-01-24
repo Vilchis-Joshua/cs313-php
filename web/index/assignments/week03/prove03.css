@@ -1,16 +1,16 @@
+#itemlist tr, td {
+    border: double 1px solid black;
+}
 #itemlist tr {
     color: rgb(219, 163, 8);
     text-align: center;
     font-size: 20px;
-    border: double 1px solid black;
-
 }
 
 #itemlist th {
     color: rgb(40, 31, 241);
     text-align: center;
     font-size: 12px;
-    border: double 1px solid black;
 }
 
 #itemlist tr:nth-child(even) {
@@ -18,5 +18,4 @@
     text-align: center;
     color: black;
     font-size: 12px;
-    border: double 1px solid black;
 }
