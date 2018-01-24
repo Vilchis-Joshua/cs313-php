@@ -15,7 +15,7 @@
     font-size: 15px;
 }
 
-#itemlist th:nth-child(even) {
+#itemlist tr:nth-child(even) {
     background: rgb(188, 181, 190);
     text-align: center;
 }
