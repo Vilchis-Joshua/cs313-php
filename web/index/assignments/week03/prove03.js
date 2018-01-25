@@ -4,6 +4,11 @@ function addItem(amount) {
     var tableRow = document.getElementById(amount).firstElementChild.nextElementSibling;
     while (tableRow != null) {
         price = parseInt(tableRow.children[1].innerHTML.substr(1));
+        if (price == null) {
+            console.log("Not Working");
+        } else {
+            console.log(price);
+        }
         total += tableRow.children[3].firstElementChild.value * price;
         tableRow = tableRow.nextElementSibling;
     }
