@@ -4,7 +4,7 @@ function addItem(amount) {
     var tableRow = document.getElementById(amount).firstElementChild.nextElementSibling;
     while (tableRow != null) {
         price = parseInt(tableRow.children[1].innerHTML.substr(1));
-        if (price == null) {
+        if (pricea == null) {
             console.log("Not Working");
         } else {
             console.log(price);
