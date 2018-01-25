@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gentlemen's Bacon</title>
+    <link rel="stylesheet" type="text/css" href="PonderAssignment07.css">
+    <script type="text/javascript" src="stuff.js"></script>
+</head>
+<body class="background">
+    <div>
+        <div class="whiteBackColor" id="title">
+            <h2 class="font">Gentlemen's bacon. Got the bacon, but need the gentlemen?</h2>
+            <p class="font">Shop here for all your needs to become the gentleman you know you can be!</p>
+        </div> <!--title -->
+
+        <div class="font fontsize1 whiteBackColor">
+            <table id="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Shaving Cream</td>
+                    <td>$3</td>
+                    <td>
+                        <input type="number" value="0" onkeyup="getQuantity('table')" />
+                    <td>
+                </tr>
+                <tr>
+                    <td>Unlimited razors for one year</td>
+                    <td>$30</td>
+                    <td>
+                        <input type="number" value="0" onkeyup="getQuantity('table')" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Top hat</td>
+                    <td>$15</td>
+                    <td>
+                        <input type="number" value="0" onkeyup="getQuantity('table')" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cane</td>
+                    <td>$5</td>
+                    <td>
+                        <input type="number" value="0" onkeyup="getQuantity('table')" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <p class="font fontsize1 whiteBackColor" id="result">Result: </p>
+        </div>
+    </div> <!-- content -->
+
+    <div>
+        <button type="button" onclick="onBuyPage()" />Buy Now!</button>
+    </div> <!--For when you buy-->
+
+
+
+    <div>
+        <form onreset="reset()">
+            <button type="button" onclick="reset()" />Second doubts about who you are?</button>
+            <div>
+                <input type="text" onkeyup="nameValidation(this.value, 'name1')" />
+                <span class="name1" style="color:red;">Please enter your first name</span>
+            </div> <!--First name verification-->
+            <div>
+                <input type="text" onkeyup="nameValidation(this.value, 'name2')" onblur="upTheCase()" />
+                <span class="name2" style="color:red;">Please enter your last name</span>
+            </div> <!--last name verification-->
+
+            <div>
+            </div> <!--Address verification-->
+
+            <div>
+                <input type="text" onkeyup="problemZipCode(this.value, 'zip')" onblur="upTheCase()" />
+                <span class="zip" style="color:red;">Please enter your 5 digit zipcode</span>
+            </div> <!--Zip Code verification-->
+
+            <div>
+                <input type="text" onkeyup="problem5(this.value, 'abb1')" onblur="upTheCase()" />
+                <span class="abb1" style="color:red;">Please enter the two letter acronym of the state you live in</span>
+            </div> <!--State verification-->
+
+            <div>
+                <input type="text" onkeyup="PhoneNumber(this.value, 'pNumber1')" />
+                <span class="pNumber1" style="color:red">Please enter your phone number without parenthesis, i.e. (xxx)</span>
+            </div> <!--Phone number verification-->
+            <div>
+                <button type="button" onclick="onBuyPage()" />Submit</button>
+            </div> <!--Submit form-->
+        </form>
+    </div> <!--For when you mess up-->
+
+
+    <div id="otherlinks" class="whiteBackColor">
+        <a href="../index.html"><span style="font-size: 40px; font-family:'Curlz MT'; color:rgb(0, 255, 255)">Buy some now!</a>
+    </div> <!-- document -->
+
+    <script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.6.5.3893-10 "></script>
+    <script type="text/javascript">D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML', 'https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script>
+
+
+</body>
+</html>
