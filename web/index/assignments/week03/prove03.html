@@ -7,39 +7,69 @@
 </head>
 <body>
     <div>
+        <!--<table id="table">
+        <tr>
+            <th>Item</th>
+            <th>Price ($)</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Bacon</td>
+            <td>$5</td>
+            <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
+        </tr>
+        <tr>
+            <td>Eggs</td>
+            <td>$2</td>
+            <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
+        </tr>
+        <tr>
+            <td>Hashbrowns</td>
+            <td>$3</td>
+            <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
+        </tr>
+        <tr>
+            <td>Orange Juice</td>
+            <td>$2</td>
+            <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
+
+        </tr>-->
         <table id="table">
             <tr>
-                <th>Item</th>
-                <th>Price ($)</th>
-                <th>Amount</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
             </tr>
             <tr>
-                <td>Bacon</td>
-                <td>$5</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Eggs</td>
-                <td>$2</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Hashbrowns</td>
+                <td>Shaving Cream</td>
                 <td>$3</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
+                <td>
+                    <input type="number" value="0" onkeyup="getQuantity('table')" />
+                <td>
             </tr>
             <tr>
-                <td>Orange Juice</td>
-                <td>$2</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" /></td>
-
+                <td>Unlimited razors for one year</td>
+                <td>$30</td>
+                <td>
+                    <input type="number" value="0" onkeyup="getQuantity('table')" />
+                </td>
             </tr>
-            <!--<tr>
-                <td>Total: </td>
-                <td></td>
-                <td id="total"></td>
-            </tr>-->
+            <tr>
+                <td>Top hat</td>
+                <td>$15</td>
+                <td>
+                    <input type="number" value="0" onkeyup="getQuantity('table')" />
+                </td>
+            </tr>
+            <tr>
+                <td>Cane</td>
+                <td>$5</td>
+                <td>
+                    <input type="number" value="0" onkeyup="getQuantity('table')" />
+                </td>
+            </tr>
         </table>
+        <!--</table>-->
         <br />
         <p id="result"></p><br />
     </div>
