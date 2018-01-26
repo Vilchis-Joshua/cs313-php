@@ -8,7 +8,6 @@
 <body>
     <div>
         <form onreset="reset()">
-            <button type="button" onclick="reset()" />Second doubts about who you are?</button>
             <div>
                 <input type="text" onkeyup="nameValidation(this.value, 'name1')" />
                 <span class="name1" style="color:red;">Please enter your first name</span>
@@ -19,17 +18,13 @@
             </div> <!--last name verification-->
 
             <div>
-            </div> <!--Address verification-->
-
-            <div>
                 <input type="text" onkeyup="problemZipCode(this.value, 'zip')" onblur="upTheCase()" />
                 <span class="zip" style="color:red;">Please enter your 5 digit zipcode</span>
             </div> <!--Zip Code verification-->
-                <button type="button" onclick="onBuyPage()" />Submit</button>
-            </div> <!--Submit form-->
+            <button type="button" onclick="onBuyPage()" />Submit</button>
         </form>
-    </div> <!--For when you mess up-->
 
+    </div> <!--Submit form-->
     
 </body>
 </html>
