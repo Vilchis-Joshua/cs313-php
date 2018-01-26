@@ -8,5 +8,5 @@ function addItem(table) {
         total += tableRow.children[2].firstElementChild.value * price;
         tableRow = tableRow.nextElementSibling;
     }
-    document.getElementById("total").innerHTML = total;
+    document.getElementById("result").innerHTML = total;
 }
