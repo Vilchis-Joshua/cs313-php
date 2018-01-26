@@ -4,6 +4,7 @@ function addItem(itemlist) {
     var tableRow = document.getElementById(itemlist).firstElementChild.firstElementChild.nextElementSibling;
     while (tableRow != null) {
         price = parseInt(tableRow.children[1].innerHTML.substr(1));
+        console.log(price);
         total += tableRow.children[2].firstElementChild.value * price;
         tableRow = tableRow.nextElementSibling;
     }
