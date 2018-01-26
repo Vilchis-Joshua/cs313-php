@@ -9,7 +9,3 @@ function addItem(amount) {
     }
     document.getElementById("total").innerHTML = total;
 }
-
-function caclulateTotal() {
-
-}
