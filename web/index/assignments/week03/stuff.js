@@ -124,7 +124,6 @@ function getQuantity(table) {
     var tableRow = document.getElementById(table).firstElementChild.firstElementChild.nextElementSibling;
     while (tableRow != null) {
         price = parseInt(tableRow.children[1].innerHTML.substr(1));
-        conso
         total += tableRow.children[2].firstElementChild.value * price;
         tableRow = tableRow.nextElementSibling;
     }

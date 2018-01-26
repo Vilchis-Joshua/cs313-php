@@ -10,3 +10,9 @@ function addItem(table) {
     }
     document.getElementById("result").innerHTML = total;
 }
+
+
+function createCookies() {
+    var bacon = document.getElementsByName("bacon");
+    console.log(bacon);
+}

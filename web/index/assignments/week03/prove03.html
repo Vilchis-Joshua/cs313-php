@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,59 +9,62 @@
     <script src="prove03.js"></script>
 </head>
 <body>
-    <div>
-        <table id="table">
-            <tr>
-                <th>Item</th>
-                <th>Price ($)</th>
-                <th>Amount</th>
-            </tr>
-            <tr>
-                <td>Bacon</td>
-                <td>$5</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Eggs</td>
-                <td>$2</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Hashbrowns</td>
-                <td>$3</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Orange Juice</td>
-                <td>$2</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Plates</td>
-                <td>$12</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Table</td>
-                <td>$45</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-            <tr>
-                <td>Chairs</td>
-                <td>$23</td>
-                <td><input type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
-            </tr>
-        </table>
+    <form action="prove03.php" method="post">
         <div>
-            <table>
+            <table id="table">
                 <tr>
-                    <th>Total: </th>
-                    <th id="result"></th>
+                    <th>Item</th>
+                    <th>Price ($)</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>Bacon</td>
+                    <td>$5</td>
+                    <td><input name="bacon" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Eggs</td>
+                    <td>$2</td>
+                    <td><input name="eggs" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Hashbrowns</td>
+                    <td>$3</td>
+                    <td><input name="hashbrowns" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Orange Juice</td>
+                    <td>$2</td>
+                    <td><input name="oj" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Plates</td>
+                    <td>$12</td>
+                    <td><input name="plates" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>$45</td>
+                    <td><input name="table" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
+                </tr>
+                <tr>
+                    <td>Chairs</td>
+                    <td>$23</td>
+                    <td><input name="chairs" type="number" value="0" onkeyup="addItem('table')" onchange="addItem('table')" /></td>
                 </tr>
             </table>
+            <div>
+                <table>
+                    <tr>
+                        <th>Total: </th>
+                        <th id="result"></th>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <p id="result">total: </p>
-    </div>
+    
+        <button onclick="createCookies()">Add to cart</button>
+    </form>
 
     <span>
         <br />
