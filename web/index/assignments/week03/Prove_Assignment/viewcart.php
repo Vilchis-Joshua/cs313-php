@@ -4,7 +4,6 @@
 <head>
     <title>Cart</title>
     <link rel="stylesheet" type="text/css" href="prove03.css" />
-    <script src="prove03.js"></script>
 </head>
 <body>
     <h2>The following items are in your cart. <br />
@@ -12,7 +11,7 @@
 	<?PHP
 		$cart_items = array();
 		foreach ($_POST["product"] as $item) {
-			array_push($cart_items, $item)
+			array_push($cart_items, $item);
 			echo "$item";
 		}
 		$_SESSION["Product"] = $cart_items;
