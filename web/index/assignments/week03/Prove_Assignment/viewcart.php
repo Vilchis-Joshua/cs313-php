@@ -10,9 +10,13 @@
     <h2>The following items are in your cart. <br />
     Please double check before heading to checkout.</h2>
 	<?PHP
-		$_SESSION["products"] = $_POST["product[]"];
+		$cart_items = array();
+		foreach ($_POST["product"] as $item) {
+			array_push($cart_items, $item)
+			echo "$item";
+		}
+		$_SESSION["Product"] = $cart_items;
 	?>
-	<p>	Bacon: <?php echo $_POST["bacon"]; ?><br/></p>
 
 </body>
 </html>
