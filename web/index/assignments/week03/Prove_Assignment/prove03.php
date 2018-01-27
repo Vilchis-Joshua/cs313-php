@@ -1,7 +1,6 @@
 <?PHP
 	session_start();
 	$_SESSION["product"] = array();
-	array_push($_SESSION["product"], $_POST["bacon"]);
 	#function addToCart(value) {
 	#if($_SESSION['product']) {
 	#		$_SESSION['product'] = array();
