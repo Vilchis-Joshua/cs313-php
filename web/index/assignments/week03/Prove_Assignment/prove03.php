@@ -1,6 +1,9 @@
 <?PHP
 	session_start();
-	$_SESSION["product"] = array();
+	if (empty($_SESSION["product"])) {
+		$_SESSION["product"] = array();
+	}
+	
 	#function addToCart(value) {
 	#if($_SESSION['product']) {
 	#		$_SESSION['product'] = array();

@@ -6,3 +6,4 @@ git commit -m "${answer}"
 git push github master
 git push heroku master
 clear
+heroku open

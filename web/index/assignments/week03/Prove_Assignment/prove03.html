@@ -1,5 +1,4 @@
-<!--<?PHP require("includes/prove03.php"); ?>-->
-<?PHP require 'prove03.php'; ?>
+<?PHP session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -39,25 +38,44 @@
         </div>
     </div>-->
 
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Quantity</th>
-        </tr>
-        <tr>
-            <td>Bacon</td>
-            <td>$2.99</td>
-            <td>0</td>
-            <td><form action="addToCart.php" method="post" onsubmit="return false;"><input name="bacon" type="submit" /></form></td>
-        </tr>
-    </table>
+
+    <form>
+        <div id="left">
+            <div id="bacon">
+                <img src="bacon.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+                <php></php>
+            </div>
+            <div id="oj">
+                <img src="oj.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+            </div>
+            <div id="hashbrowns">
+                <img src="hashbrowns.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="table">
+                <img src="table.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+            </div>
+            <div id="chair">
+                <img src="chari.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+            </div>
+            <div id="plates">
+                <img src="plate.jpg" width="128" height="128" />
+                <button onclick="addToCart()">Add to cart</button>
+            </div>
+        </div>
+    </form>
 
 
-    <form action="addToCart.php" method="post" ><input type="submit" /></form>
     <span>
         <br />
-        <a href="checkout.html">Checkout</a><br /><br />
+        <a href="viewcart.php">Checkout</a><br /><br />
         <a href="stuff.html">Other</a><br />
         <a class="prove" href="week03.html">Team Activity (done alone)</a>
     </span>

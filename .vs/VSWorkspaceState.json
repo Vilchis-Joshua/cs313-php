@@ -4,8 +4,9 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week03"
+    "\\web\\index\\assignments\\week03",
+    "\\web\\index\\assignments\\week03\\Prove_Assignment"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week03\\stuff.js",
+  "SelectedNode": "\\temp.sh",
   "PreviewInSolutionExplorer": false
 }
