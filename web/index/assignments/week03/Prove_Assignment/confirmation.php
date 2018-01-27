@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div>
-		<p>These are the items that you purchased:</p><br />
+		<p>These are the items that you purchased:</p>
 		<?PHP
 			$i = 1;
 			$cart_items = array();
@@ -22,7 +22,6 @@
 
 
 		<div>
-			<p>This is the address that we will send it to:</p><br />
 			<?php
 				$address = $_POST["address"];
 				echo "Send to this address: " . "$address";
