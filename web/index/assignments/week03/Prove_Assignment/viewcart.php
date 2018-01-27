@@ -17,5 +17,6 @@
 		$_SESSION["Product"] = $cart_items;
 	?>
 
+	<a href="prove03.html">Browse</a>
 </body>
 </html>
