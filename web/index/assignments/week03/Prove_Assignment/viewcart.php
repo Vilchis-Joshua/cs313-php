@@ -18,13 +18,13 @@
 		$i = 1;
 		foreach ($_POST["product"] as $item) {
 			array_push($cart_items, $item);
-			echo "$item" . "$i" . "<br/>";
+			echo "$i" . "$item" . "<br/>";
 			$i++;
 		}
 		$_SESSION["Product"] = $cart_items;
 	?>
 
-	<a href="prove03.html">Browse</a>
+	<a href="prove03.html">Browse</a> <br />
 	<a href="checkout.php">Checkout</a> 
 </body>
 </html>
