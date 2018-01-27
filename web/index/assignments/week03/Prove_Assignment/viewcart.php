@@ -12,12 +12,13 @@
 	<?PHP
 		if (empty($_SESSION["Product"])) {
 			$cart_items = array();
-			foreach ($_POST["product"] as $item) {
-				array_push($cart_items, $item);
-				echo "$item" . "<br/>";
-			}
-			$_SESSION["Product"] = $cart_items;
+			$_SESSION["Product"];
 		}
+		foreach ($_POST["product"] as $item) {
+			array_push($cart_items, $item);
+			echo "$item" . "<br/>";
+		}
+		$_SESSION["Product"] = $cart_items;
 	?>
 
 	<a href="prove03.html">Browse</a>
