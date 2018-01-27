@@ -18,7 +18,7 @@
 		$i = 1;
 		foreach ($_POST["product"] as $item) {
 			array_push($cart_items, $item);
-			echo "$i" . "$item" . "<br/>";
+			echo "$i) " . "$item" . "<br/>";
 			$i++;
 		}
 		$_SESSION["Product"] = $cart_items;
