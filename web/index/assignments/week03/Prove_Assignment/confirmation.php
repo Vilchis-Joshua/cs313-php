@@ -7,29 +7,22 @@
     <script type="text/javascript" src="stuff.js"></script>-->
 </head>
 <body>
-    <div>
-        <form onreset="reset()">
-            <div>
-                <input type="text" onkeyup="nameValidation(this.value, 'name1')" />
-                <span class="name1" style="color:red;">Please enter your first name</span>
-            </div> <!--First name verification-->
-            <div>
-                <input type="text" onkeyup="nameValidation(this.value, 'name2')" onblur="upTheCase()" />
-                <span class="name2" style="color:red;">Please enter your last name</span>
-            </div> <!--last name verification-->
+		<?PHP
+			$i = 1;
+			$cart_items = array();
+			foreach ($_SESSION["Product"] as $item) {
+				array_push($cart_items, $item);
+				echo "$i) " . "$item" . "<br/>";
+				$i++;
+			}
 
-            <div>
-                <input type="text" onkeyup="problemZipCode(this.value, 'zip')" onblur="upTheCase()" />
-                <span class="zip" style="color:red;">Please enter your 5 digit zipcode</span>
-            </div> <!--Zip Code verification-->
-            <button type="button" onclick="onBuyPage()" />Submit</button>
-        </form>
-
-    </div> <!--Submit form-->
-    
+			echo "Send to this address: " . "$_POST["address"]";
+		?>
 	<div>
+		<br />
+		<a href="viewcart.php">View Cart</a><br/>
 		<a href="confirmation.php">Confirm</a>
-		<a href="viewcart.php">View Cart</a>
+
 	</div>
 </body>
 </html>
