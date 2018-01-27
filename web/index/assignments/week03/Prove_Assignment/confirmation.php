@@ -9,7 +9,6 @@
 <body>
 	<div>
 		<p>These are the items that you purchased:</p><br />
-	</div>
 		<?PHP
 			$i = 1;
 			$cart_items = array();
@@ -19,6 +18,8 @@
 				$i++;
 			}
 		?>
+	</div>
+
 
 		<div>
 			<p>This is the address that we will send it to:</p><br />
