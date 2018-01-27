@@ -16,7 +16,8 @@
 				$i++;
 			}
 
-			echo "Send to this address: " . "$_POST["address"]";
+			$address = $_POST["address"];
+			echo "Send to this address: " . "$address";
 		?>
 	<div>
 		<br />
