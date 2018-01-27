@@ -14,13 +14,17 @@
 			$cart_items = array();
 			$_SESSION["Product"];
 		}
+
+		$i = 1;
 		foreach ($_POST["product"] as $item) {
 			array_push($cart_items, $item);
-			echo "$item" . "<br/>";
+			echo "$item" . "$i" . "<br/>";
+			$i++;
 		}
 		$_SESSION["Product"] = $cart_items;
 	?>
 
 	<a href="prove03.html">Browse</a>
+	<a href="checkout.php">Checkout</a> 
 </body>
 </html>

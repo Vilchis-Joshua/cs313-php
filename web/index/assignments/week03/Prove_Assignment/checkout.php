@@ -9,20 +9,8 @@
 <body>
     <div>
         <form onreset="reset()">
-            <div>
-                <input type="text" onkeyup="nameValidation(this.value, 'name1')" />
-                <span class="name1" style="color:red;">Please enter your first name</span>
-            </div> <!--First name verification-->
-            <div>
-                <input type="text" onkeyup="nameValidation(this.value, 'name2')" onblur="upTheCase()" />
-                <span class="name2" style="color:red;">Please enter your last name</span>
-            </div> <!--last name verification-->
-
-            <div>
-                <input type="text" onkeyup="problemZipCode(this.value, 'zip')" onblur="upTheCase()" />
-                <span class="zip" style="color:red;">Please enter your 5 digit zipcode</span>
-            </div> <!--Zip Code verification-->
-            <button type="button" onclick="onBuyPage()" />Submit</button>
+			<p>Please input your billing address: </p><br />
+			<input type="text" name="address"/>
         </form>
 
     </div> <!--Submit form-->
