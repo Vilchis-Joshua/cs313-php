@@ -9,6 +9,8 @@
 <body>
 	<div>
 		<?PHP
+			$i = 1;
+			$cart_items = array();
 			foreach ($_SESSION["Product"] as $item) {
 				array_push($cart_items, $item);
 				echo "$i) " . "$item" . "<br/>";
