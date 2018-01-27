@@ -39,7 +39,7 @@
         </div>
     </div>-->
 
-    <form action="addToCart.php" name="cart" method="post">
+    <form name="cart" method="post">
         <table>
             <tr>
                 <th>Product</th>
@@ -48,19 +48,17 @@
             </tr>
             <tr>
                 <td>Bacon</td>
-                <td>2.99</td>
-                <td><input type="submit" onsubmit="return false;" />Add</td>
+                <td>$2.99</td>
+                <td>0</td>
+                <td><input type="submit" onsubmit="return false;" /></td>
             </tr>
         </table>
 
 
-        <p>
-            <?PHP
-                echo "Bacon quanitity: " .  count($_SESSION["product"]);
-            ?>
-        </p>
-    </form>
+        </form>
 
+
+    <form action="addToCart.php" ><input type="submit" /></form>
     <span>
         <br />
         <a href="checkout.html">Checkout</a><br /><br />
