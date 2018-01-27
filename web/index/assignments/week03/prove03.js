@@ -16,3 +16,7 @@ function createCookies() {
     var bacon = document.getElementsByName("bacon");
     console.log(bacon);
 }
+
+function addToCart() {
+
+}
