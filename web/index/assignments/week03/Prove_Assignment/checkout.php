@@ -1,0 +1,36 @@
+<?PHP session_start(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <!--<link rel="stylesheet" type="text/css" href="PonderAssignment07.css">
+    <script type="text/javascript" src="stuff.js"></script>-->
+</head>
+<body>
+    <div>
+        <form onreset="reset()">
+            <div>
+                <input type="text" onkeyup="nameValidation(this.value, 'name1')" />
+                <span class="name1" style="color:red;">Please enter your first name</span>
+            </div> <!--First name verification-->
+            <div>
+                <input type="text" onkeyup="nameValidation(this.value, 'name2')" onblur="upTheCase()" />
+                <span class="name2" style="color:red;">Please enter your last name</span>
+            </div> <!--last name verification-->
+
+            <div>
+                <input type="text" onkeyup="problemZipCode(this.value, 'zip')" onblur="upTheCase()" />
+                <span class="zip" style="color:red;">Please enter your 5 digit zipcode</span>
+            </div> <!--Zip Code verification-->
+            <button type="button" onclick="onBuyPage()" />Submit</button>
+        </form>
+
+    </div> <!--Submit form-->
+    
+	<div>
+		<a href="confirmation.php">Confirm</a>
+		<a href="viewcart.php">View Cart</a>
+	</div>
+</body>
+</html>
+
