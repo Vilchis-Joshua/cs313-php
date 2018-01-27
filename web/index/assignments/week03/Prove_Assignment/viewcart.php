@@ -8,13 +8,16 @@
 <body>
     <h2>The following items are in your cart. <br />
     Please double check before heading to checkout.</h2>
+
 	<?PHP
-		$cart_items = array();
-		foreach ($_POST["product"] as $item) {
-			array_push($cart_items, $item);
-			echo "$item" . "<br/>";
+		if (empty($_SESSION["Product"])) {
+			$cart_items = array();
+			foreach ($_POST["product"] as $item) {
+				array_push($cart_items, $item);
+				echo "$item" . "<br/>";
+			}
+			$_SESSION["Product"] = $cart_items;
 		}
-		$_SESSION["Product"] = $cart_items;
 	?>
 
 	<a href="prove03.html">Browse</a>
