@@ -1,5 +1,6 @@
 <?php
-	require("includes/prove03.php");
+	#require("includes/prove03.php");
+	require 'prove03.php';
 	session_start();
 		echo "Bacon quanitity: " .  count($_SESSION["product"]);
            
