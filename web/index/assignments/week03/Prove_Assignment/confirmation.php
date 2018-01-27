@@ -18,9 +18,6 @@
 				echo "$i) " . "$item" . "<br/>";
 				$i++;
 			}
-
-			$address = $_POST["address"];
-			echo "Send to this address: " . "$address";
 		?>
 
 		<div>
