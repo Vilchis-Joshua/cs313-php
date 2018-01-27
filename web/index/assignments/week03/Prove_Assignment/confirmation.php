@@ -7,6 +7,9 @@
     <script type="text/javascript" src="stuff.js"></script>-->
 </head>
 <body>
+	<div>
+		<p>These are the items that you purchased:</p><br />
+	</div>
 		<?PHP
 			$i = 1;
 			$cart_items = array();
@@ -19,6 +22,14 @@
 			$address = $_POST["address"];
 			echo "Send to this address: " . "$address";
 		?>
+
+		<div>
+			<p>This is the address that we will send it to:</p><br />
+			<?php
+				$address = $_POST["address"];
+				echo "Send to this address: " . "$address";
+			?>
+		</div>
 	<div>
 		<br />
 		<a href="viewcart.php">View Cart</a><br/>

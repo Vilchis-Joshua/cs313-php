@@ -8,6 +8,9 @@
 </head>
 <body>
 	<div>
+		<p>These are the items that you purchased:</p><br />
+	</div>
+	<div>
 		<?PHP
 			$i = 1;
 			$cart_items = array();
