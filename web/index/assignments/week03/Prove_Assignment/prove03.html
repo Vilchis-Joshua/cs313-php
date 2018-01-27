@@ -38,36 +38,37 @@
         </div>
     </div>-->
 
-    <form>
+    <form action="viewcart.php" method="post">
         <div id="left">
             <div id="bacon">
                 <img src="Pictures/bacon.jpg" width="128" height="128" />
-                <input type="checkbox" name="bacon" value="" />
+                <input type="checkbox" name="product[]" value="1" />
             </div>
             <div id="oj">
                 <img src="Pictures/oj.jpg" width="128" height="128" />
-                <input type="checkbox" name="oj" value="" />
+                <input type="checkbox" name="product[]" value="2" />
             </div>
             <div id="hashbrowns">
                 <img src="Pictures/hashbrowns.jpg" width="128" height="128" />
-                <input type="checkbox" name="hashbrown" value="" />
+                <input type="checkbox" name="product[]" value="3" />
             </div>
         </div>
 
         <div id="right">
             <div id="tables">
                 <img src="Pictures/table.jpg" width="128" height="128" />
-                <input type="checkbox" name="tables" value="" />
+                <input type="checkbox" name="product[]" value="4" />
             </div>
             <div id="chair">
                 <img src="Pictures/chari.jpg" width="128" height="128" />
-                <input type="checkbox" name="chair" value="" />
+                <input type="checkbox" name="product[]" value="5" />
             </div>
             <div id="plates">
                 <img src="Pictures/plate.jpg" width="128" height="128" />
-                <input type="checkbox" name="plates" value="" /> 
+                <input type="checkbox" name="product[]" value="6" /> 
             </div>
         </div>
+        <input type="submit" onsubmit="return false;" />
     </form>
 
 

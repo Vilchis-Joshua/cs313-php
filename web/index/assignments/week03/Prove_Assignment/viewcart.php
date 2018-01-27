@@ -1,8 +1,4 @@
-<?php
-    session_start();
-
-	var_dump($_SESSION['cart']);
-?>
+<?php session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -13,7 +9,10 @@
 <body>
     <h2>The following items are in your cart. <br />
     Please double check before heading to checkout.</h2>
-    
+	<?PHP
+		$_SESSION["products"] = $_POST["product[]"];
+	?>
+	<p>	Bacon: <?php echo $_POST["bacon"]; ?><br/></p>
 
 </body>
 </html>
