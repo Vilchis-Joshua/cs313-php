@@ -40,13 +40,25 @@
     </div>-->
 
     <form action="prove03.php" name="cart" method="post">
-        <!--<table>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Bacon</td>
+                <td>2.99</td>
+                <td><input type="submit" onsubmit="return false;" />Add</td>
+            </tr>
+        </table>
 
-        </table>-->
 
-        <?PHP
-            addToCart();
-        ?>
+        <p>
+            <?PHP
+                echo $_SESSION[""];
+            ?>
+        </p>
     </form>
 
     <span>
