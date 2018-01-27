@@ -22,7 +22,7 @@
         <form action="confirmation.php" method="post">
 			<p>Please input your billing address: </p><br />
 			<input type="text" name="address"/>
-			<button type="submit">
+			<button type="submit">Confirm</button>
         </form>
     </div> <!--Submit form-->
     
