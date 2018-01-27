@@ -19,15 +19,14 @@
 		?>
 	</div>
     <div>
-        <form onreset="reset()">
+        <form action="confirmation.php" method="post">
 			<p>Please input your billing address: </p><br />
 			<input type="text" name="address"/>
+			<button type="submit">
         </form>
-
     </div> <!--Submit form-->
     
 	<div>
-		<a href="confirmation.php">Confirm</a>
 		<a href="viewcart.php">View Cart</a>
 	</div>
 </body>
