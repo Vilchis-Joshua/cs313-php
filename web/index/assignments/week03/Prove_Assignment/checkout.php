@@ -7,6 +7,15 @@
     <script type="text/javascript" src="stuff.js"></script>-->
 </head>
 <body>
+	<div>
+		<?PHP
+			foreach ($_SESSION["Product"] as $item) {
+				array_push($cart_items, $item);
+				echo "$i) " . "$item" . "<br/>";
+				$i++;
+			}
+		?>
+	</div>
     <div>
         <form onreset="reset()">
 			<p>Please input your billing address: </p><br />
