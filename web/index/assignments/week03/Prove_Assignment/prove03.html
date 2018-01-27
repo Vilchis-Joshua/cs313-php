@@ -1,5 +1,5 @@
 <?PHP session_start(); ?>
-<?PHP
+<?PHP 
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -39,7 +39,7 @@
         </div>
     </div>-->
 
-    <form action="viewcart.php" method="post">
+    <form action="viewcart.php" method="post" onsubmit="return false;">
         <div id="left">
             <div id="bacon">
                 <img src="Pictures/bacon.jpg" width="128" height="128" />
@@ -69,7 +69,7 @@
                 <input type="checkbox" name="product[]" value="plates" /> 
             </div>
         </div>
-        <input type="submit" onsubmit="return false;" />
+        <input type="submit"/>Add<br />
     </form>
 
 
