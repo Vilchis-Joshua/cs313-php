@@ -30,6 +30,7 @@
     </div> <!--Submit form-->
     
 	<div>
+		<br />
 		<a href="viewcart.php">View Cart</a>
 	</div>
 </body>

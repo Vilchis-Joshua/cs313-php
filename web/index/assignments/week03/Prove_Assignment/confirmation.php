@@ -20,17 +20,18 @@
 		?>
 	</div>
 
-
-		<div>
-			<?php
-				$address = $_POST["address"];
-				echo "Send to this address: " . "$address";
-			?>
-		</div>
+	
+	<div>
+		<?php
+			$address = $_POST["address"];
+			echo "Send to this address: " . "$address";
+		?>
+	<div>
 	<div>
 		<br />
 		<a href="viewcart.php">View Cart</a><br/>
 		<a href="confirmation.php">Confirm</a>
+	</div>
 
 	</div>
 </body>

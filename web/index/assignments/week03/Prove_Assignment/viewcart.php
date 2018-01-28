@@ -24,7 +24,9 @@
 		$_SESSION["Product"] = $cart_items;
 	?>
 
-	<a href="prove03.html">Browse</a> <br />
-	<a href="checkout.php">Checkout</a> 
+	<div>
+		<a href="prove03.html">Browse</a> <br />
+		<a href="checkout.php">Checkout</a> 
+	</div>
 </body>
 </html>
