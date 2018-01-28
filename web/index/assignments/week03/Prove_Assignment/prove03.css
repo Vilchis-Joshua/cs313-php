@@ -1,9 +1,6 @@
-#right {
-    float: left;
-}
-
-#left {
-    top:auto;
+.prod {
+    display:flex;
+    flex-flow: row wrap;
 }
 
 .prove a:hover {
