@@ -2,13 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Checkout</title>
-    <!--<link rel="stylesheet" type="text/css" href="PonderAssignment07.css">
-    <script type="text/javascript" src="stuff.js"></script>-->
+    <title>Confirmation</title>
+    <link rel="stylesheet" type="text/css" href="confirmation.css">
 </head>
 <body>
 	<div>
-		<p>These are the items that you purchased:</p>
+		<p class="center">These are the items that you purchased:</p>
 		<?PHP
 			$i = 1;
 			$cart_items = array();
