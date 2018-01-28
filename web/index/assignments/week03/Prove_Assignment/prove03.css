@@ -1,9 +1,3 @@
-#table {
-    border: double black 1px;
-    column-width: 20px;
+#right {
+    right:auto;
 }
-
-#table tr:nth-child(even) {
-    background: rgb(172, 172, 188);
-}
-

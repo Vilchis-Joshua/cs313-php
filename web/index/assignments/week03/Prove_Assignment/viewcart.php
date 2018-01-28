@@ -24,6 +24,11 @@
 		$_SESSION["Product"] = $cart_items;
 	?>
 
+			$_SESSION["cart"] = array();
+            foreach($_POST as $item){
+				array_push($_SESSION, $item);
+			}
+
 	<div>
 		<br />
 		<a href="prove03.html">Browse</a> <br />
