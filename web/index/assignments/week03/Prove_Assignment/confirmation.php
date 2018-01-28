@@ -32,7 +32,6 @@
 	<div>
 		<br />
 		<a href="viewcart.php">View Cart</a><br/>
-		<a href="confirmation.php">Confirm</a>
 	</div>
 
 	</div>
