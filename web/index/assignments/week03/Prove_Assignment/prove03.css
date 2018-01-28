@@ -5,6 +5,10 @@
     justify-content: space-around;
 }
 
+#inputButton {
+    justify-content:center;
+}
+
 .prove a:hover {
     background-color: #808080;
 }
