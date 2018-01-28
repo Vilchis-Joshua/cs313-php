@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>Confirmation</title>
+	<link rel="stylesheet" type="text/css" href="confirmation.css" />
+
 	<style>
 	</style>
 </head>
