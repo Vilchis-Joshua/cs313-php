@@ -1,8 +1,11 @@
 #right {
-    bottom: 10px;
-    position:relative;
+    float: left;
 }
 
 #left {
     top:auto;
+}
+
+.prove a:hover {
+    background-color: #808080;
 }
