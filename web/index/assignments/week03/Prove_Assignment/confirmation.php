@@ -5,6 +5,7 @@
     <title>Confirmation</title>
 	<style>
 		.center {
+			background-color: red;
 			left: 50%;
 		}
 	</style>
