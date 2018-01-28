@@ -1,6 +1,7 @@
 .prod {
     display:flex;
     flex-flow: row wrap;
+    padding: 10px;
 }
 
 .prove a:hover {
