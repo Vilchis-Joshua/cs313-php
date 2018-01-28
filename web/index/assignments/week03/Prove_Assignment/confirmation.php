@@ -3,7 +3,11 @@
 <html>
 <head>
     <title>Confirmation</title>
-    <link rel="stylesheet" type="text/css" href="confirmation.css">
+	<style>
+		.center {
+			left: 50%;
+		}
+	</style>
 </head>
 <body>
 	<div>
