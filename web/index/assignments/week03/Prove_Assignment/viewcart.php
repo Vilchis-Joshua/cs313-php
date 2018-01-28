@@ -18,7 +18,6 @@
 		$i = 1;
 		foreach ($_POST["product"] as $item) {
 			array_push($cart_items, $item);
-			if ($item == "bacon") { echo HELLO WORLD!; }
 			echo "$i) " . "$item" . "<br/>";
 			$i++;
 		}
