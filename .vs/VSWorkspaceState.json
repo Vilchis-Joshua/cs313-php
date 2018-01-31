@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\web",
-    "\\web\\index",
     "\\web\\index\\assignments",
     "\\web\\index\\assignments\\week04",
     "\\web\\index\\assignments\\week04\\TeamActivity"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week04\\TeamActivity\\conference.sql",
+  "SelectedNode": "\\composer.lock",
   "PreviewInSolutionExplorer": false
 }
