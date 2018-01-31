@@ -5,7 +5,7 @@
 	$password = "f86428dabd4b102ac30c3ade723ea9b002ff3db70c3eb94bf3740be2b92f9c0c";
 	$port = "5432";
 
-#	$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;port=$port;password=$password";
+	$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;port=$port;password=$password";
 #
 #	$db = new PDO($dsn);
 #	if($db){
