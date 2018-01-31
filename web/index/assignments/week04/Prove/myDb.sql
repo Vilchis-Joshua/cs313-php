@@ -1,0 +1,11 @@
+CREATE DATABASE project;
+
+\c project;
+
+
+CREATE TABLE public.user(
+   id SERIAL NOT NULL PRIMARY KEY,
+   username VARCHAR(50) NOT NULL UNIQUE,
+   PASSWORD VARCHAR(50) NOT NULL,
+   
+);

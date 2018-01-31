@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week03",
-    "\\web\\index\\assignments\\week03\\Prove_Assignment"
+    "\\web\\index\\assignments\\week04",
+    "\\web\\index\\assignments\\week04\\TeamActivity"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week03\\Prove_Assignment\\prove03.css",
+  "SelectedNode": "\\database.sh",
   "PreviewInSolutionExplorer": false
 }
