@@ -6,9 +6,7 @@
 	$port = "5432";
 
 	$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;port=$port;password=$password";
-	echo "Host: " . $host . "<br />";
-	echo "dbname: " . $dbname . "<br />";
-	echo "user: " . $user . "<br />";
+	echo "dsn: " . $dsn . "<br />";
 #	db = new PDO($dsn);
 #	if($db){
 #		echo "Connected <br />".$db;
