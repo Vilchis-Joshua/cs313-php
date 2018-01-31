@@ -15,6 +15,5 @@
 
 	}else {
 		echo "Not connected";
-}
-
+	}
 ?>
