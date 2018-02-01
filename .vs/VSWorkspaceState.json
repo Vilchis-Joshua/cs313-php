@@ -2,10 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\web",
+    "\\web\\index",
     "\\web\\index\\assignments",
     "\\web\\index\\assignments\\week04",
     "\\web\\index\\assignments\\week04\\TeamActivity"
   ],
-  "SelectedNode": "\\composer.lock",
+  "SelectedNode": "\\web\\index.php",
   "PreviewInSolutionExplorer": false
 }
