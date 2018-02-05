@@ -28,5 +28,5 @@
 #		'names' => $names
 #	  ));
 #	});
-#	<a href="hello.html">Index</a>
+	<a href="hello.html">Index</a>
 ?>
