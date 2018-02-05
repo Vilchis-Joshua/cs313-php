@@ -1,5 +1,5 @@
 <?PHP
-	$dbUrl = getenv('DATABASE_URL');
+	$dbUrl = getenv('HEROKU_POSTGRESQL_CHARCOAL_URL');
 
 	$dbopts = parse_url($dbUrl);
 
