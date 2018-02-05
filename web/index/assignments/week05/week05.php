@@ -8,8 +8,11 @@
 	$dbPassword = $dbopts["pass"];
 	$dbName = ltrim($dbopts["path"],'/');
 
-	$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
+	try {
+		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+	} catch (PDOException $e) {
+		print "error!: " . $e->getMessage() . "<br/>"
+	}
 	if($db){
 	echo "Connected <br />".$db;
 	echo "Username: " . $_POST["username"];
