@@ -4,10 +4,8 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week04",
-    "\\web\\index\\assignments\\week04\\TeamActivity",
-    "\\web\\index\\assignments\\week05"
+    "\\web\\index\\assignments\\week04\\Prove"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week04\\TeamActivity\\conference.php",
+  "SelectedNode": "\\web\\index.php",
   "PreviewInSolutionExplorer": false
 }
