@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <head>
+	<style>
+		#link {
+			display: flex;
+			align-content: center;
+		}
+	</style>
 </head>
 <body>
-	<a href="hello.html">Index</a>
+	<a id="link" href="hello.html">Index</a><br />
 </body>
 	</html>
 
@@ -36,5 +42,4 @@
 #		'names' => $names
 #	  ));
 #	});
-	echo "Hello World!";
 ?>
