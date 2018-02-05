@@ -29,5 +29,12 @@
 #	  ));
 #	});
 
-#	<a href="hello.html">Index</a>
+
+	<DOCTYPE! html>
+	<head>
+	</head>
+	<body>
+		<a href="hello.html">Index</a>
+	</body>
+	</html>
 ?>
