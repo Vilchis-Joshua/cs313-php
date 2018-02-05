@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\vendor",
+    "\\vendor\\composer"
   ],
   "SelectedNode": "\\database.sh",
   "PreviewInSolutionExplorer": false
