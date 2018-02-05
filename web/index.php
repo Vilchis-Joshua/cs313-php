@@ -30,7 +30,7 @@
 #	});
 
 
-	<DOCTYPE! html>
+	<!DOCTYPE html>
 	<head>
 	</head>
 	<body>
