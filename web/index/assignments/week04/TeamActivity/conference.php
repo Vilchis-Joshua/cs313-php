@@ -7,7 +7,7 @@
 
 	$dsn = "pgsql:host=$host;dbname=$dbname;user=$user;port=$port;password=$password";
 	echo "dsn: " . $dsn . "<br />";
-	db = new PDO($dsn);
+	$db = new PDO($dsn);
 	if($db){
 		echo "Connected <br />".$db;
 		echo "Username: " . $_POST["username"];

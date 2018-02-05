@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\web",
+    "\\web\\index\\assignments"
   ],
-  "SelectedNode": "\\myDb.sql",
+  "SelectedNode": "\\web\\hello.html",
   "PreviewInSolutionExplorer": false
 }
