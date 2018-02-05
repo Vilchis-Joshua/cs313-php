@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+	<a href="hello.html">Index</a>
+</body>
+	</html>
+
 <?PHP
 #	$dbopts = parse_url(getenv('DATABASE_URL'));
 #	$app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
@@ -28,13 +36,5 @@
 #		'names' => $names
 #	  ));
 #	});
-
-
-	<!DOCTYPE html>
-	<head>
-	</head>
-	<body>
-		<a href="hello.html">Index</a>
-	</body>
-	</html>
+	echo "Hello World!";
 ?>
