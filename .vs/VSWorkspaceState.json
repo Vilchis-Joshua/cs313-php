@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\web",
-    "\\web\\index",
-    "\\web\\index\\assignments"
+    ""
   ],
-  "SelectedNode": "\\web",
+  "SelectedNode": "\\database.sh",
   "PreviewInSolutionExplorer": false
 }
