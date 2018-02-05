@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\web",
-    "\\web\\index\\assignments"
+    "\\web\\index",
+    "\\web\\index\\assignments",
+    "\\web\\index\\assignments\\week05"
   ],
-  "SelectedNode": "\\web\\hello.html",
+  "SelectedNode": "\\web\\index\\index.html",
   "PreviewInSolutionExplorer": false
 }
