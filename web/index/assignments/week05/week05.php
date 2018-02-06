@@ -9,12 +9,12 @@
 	$dbName = ltrim($dbopts["path"],'/');
 	echo $dbHost;
 
-#	try {
-#		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-#	} catch (PDOException $e) {
-#		print "error!: " . $e->getMessage() . "<br/>";
-#		die();
-#	}
+	try {
+		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+	} catch (PDOException $e) {
+		print "error!: " . $e->getMessage() . "<br/>";
+		die();
+	}
 
 	if($db){
 	echo "Connected <br />".$db;
