@@ -15,6 +15,7 @@
 #		print "error!: " . $e->getMessage() . "<br/>";
 #		die();
 #	}
+
 	if($db){
 	echo "Connected <br />".$db;
 	echo "Username: " . $_POST["username"];

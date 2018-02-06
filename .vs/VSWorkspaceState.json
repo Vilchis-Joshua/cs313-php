@@ -1,9 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\vendor",
-    "\\vendor\\composer"
+    "\\.vs\\config",
+    "\\vendor\\bin",
+    "\\vendor\\symfony\\debug",
+    "\\vendor\\symfony\\debug\\Exception",
+    "\\web",
+    "\\web\\index\\assignments",
+    "\\web\\index\\assignments\\week03",
+    "\\web\\index\\assignments\\week03\\Prove_Assignment"
   ],
-  "SelectedNode": "\\database.sh",
+  "SelectedNode": "\\myDb.sql",
   "PreviewInSolutionExplorer": false
 }
