@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\web",
-    "\\web\\index",
-    "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week05"
+    "\\vendor",
+    "\\web"
   ],
-  "SelectedNode": "\\web\\hello.html",
+  "SelectedNode": "\\myDb.sql",
   "PreviewInSolutionExplorer": false
 }
