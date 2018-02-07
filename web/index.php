@@ -85,13 +85,3 @@
 
 </body>
 </html>
-
-<!--Put all styles in an external stylesheet. (No inline styles.)
-
-At least one image
-
-Something dynamic (e.g., mouse-overs, menus, on-click, on-change, etc.)
-
-Include reasonable colors, images, etc. to show your creativity and personality (but don't forget to keep it somewhat professional).
-
-No run-time errors-->
