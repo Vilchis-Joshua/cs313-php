@@ -1,4 +1,4 @@
-<?PHP include index.php; ?>
+<?PHP include AccessDb.php; ?>
 
 
 <?php
