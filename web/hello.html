@@ -11,7 +11,7 @@
     $dbUrl = getenv('DATABASE_URL');
 
     if (empty($dbUrl)) {
-    $dbUrl = "postgres://postgres:April1993*@localhost:5432/postgres";
+    $dbUrl = "postgres://postgres:April1993*@127.0.0.1:5432/postgres";
     }
 
     $dbopts = parse_url($dbUrl);
