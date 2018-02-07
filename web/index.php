@@ -9,37 +9,40 @@
 </head>
 <body>
 	<a id="link" href="hello.html">Index</a><br />
+
+
+<?php
+    $dbUrl = getenv('DATABASE_URL');
+
+    if (empty($dbUrl)) {
+        $dbUrl = "postgres://postgres:hello@127.0.0.1:5433/postgres";
+    }
+
+    $dbopts = parse_url($dbUrl);
+
+    print "<p>$dbUrl</p>\n\n";
+
+    $dbHost = $dbopts["host"];
+    $dbPort = $dbopts["port"];
+    $dbUser = $dbopts["user"];
+    $dbPassword = $dbopts["pass"];
+    $dbName = ltrim($dbopts["path"],'/');
+
+    print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
+
+    try {
+    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    }
+    catch (PDOException $ex) {
+    print "<p>error: $ex->getMessage() </p>\n\n";
+    die();
+    }
+	foreach ($db->query('SELECT now()') as $row)
+	{
+		print "<p>$row[0]</p>\n\n";
+	}
+
+    ?>
+
 </body>
-	</html>
-
-<?PHP
-#	$dbopts = parse_url(getenv('DATABASE_URL'));
-#	$app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-#				   array(
-#					'pdo.server' => array(
-#					   'driver'   => 'pgsql',
-#					   'user' => $dbopts["user"],
-#					   'password' => $dbopts["pass"],
-#					   'host' => $dbopts["host"],
-#					   'port' => $dbopts["port"],
-#					   'dbname' => ltrim($dbopts["path"],'/')
-#					   )
-#				   )
-#	);
-
-
-#	$app->get('/db/', function() use($app) {
-#	  $st = $app['pdo']->prepare('SELECT name FROM test_table');
-#	  $st->execute();
-#
-#	  $names = array();
-#	  while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
-#		$app['monolog']->addDebug('Row ' . $row['name']);
-#		$names[] = $row;
-#	  }
-#
-#	  return $app['twig']->render('database.twig', array(
-#		'names' => $names
-#	  ));
-#	});
-?>
+</html>
