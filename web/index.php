@@ -8,8 +8,6 @@
 	</style>
 </head>
 <body>
-	<a id="link" href="hello.html">Index</a><br />
-
 
 <?php
     $dbUrl = getenv('DATABASE_URL');
