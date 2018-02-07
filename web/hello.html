@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    $dbUrl = getenv('HEROKU_POSTGRESQL_CHARCOAL_URL');
+    $dbUrl = getenv('DATABASE_URL');
 
     if (empty($dbUrl)) {
     $dbUrl = "postgres://postgres:April1993*@localhost:5432/cs313db";
