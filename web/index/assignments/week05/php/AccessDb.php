@@ -5,7 +5,7 @@ $dbUrl = getenv('DATABASE_URL');
 
 	if (empty($dbUrl)) {
 	 // example localhost configuration URL with postgres username and a database called cs313db
-	 $dbUrl = "postgres://postgres:password@localhost:5432/postgres";
+	 $dbUrl = "postgres://postgres:hello@127.0.0.1:5433/scripture";
 	}
 
 	$dbopts = parse_url($dbUrl);
@@ -21,7 +21,7 @@ $dbUrl = getenv('DATABASE_URL');
 	//print "<p>pgsql:host=$dbHost;port=$dbPort;dbname=$dbName</p>\n\n";
 
 	try {
-	 $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 	}
 	catch (PDOException $ex) {
 	 print "<p>error: $ex->getMessage() </p>\n\n";
