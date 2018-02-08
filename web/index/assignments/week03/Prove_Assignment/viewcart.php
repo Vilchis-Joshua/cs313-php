@@ -28,7 +28,7 @@
 
 	<div>
 		<br />
-		<a href="prove03.html">Browse</a> <br />
+		<a href="prove03.php">Browse</a> <br />
 		<a href="checkout.php">Checkout</a> 
 	</div>
 </body>
