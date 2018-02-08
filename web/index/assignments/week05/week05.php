@@ -1,5 +1,5 @@
 <?PHP session_start(); ?>
-<?PHP include('AccessDb.php'; ?>
+<?PHP include('AccessDb.php'); ?>
 
 <!DOCTYPE HTML>
 <html>
