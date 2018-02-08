@@ -12,6 +12,9 @@
 		if (empty($_SESSION["product"])) {
 			$_SESSION["product"] = array();
 		}
+			<div>
+		<br />
+	     include('../php/AccessDb.php');
 	?>
 
     <form action="viewcart.php" method="post">
@@ -44,13 +47,6 @@
         </div>
         <input class="inputButton" value="Add" type="submit"/>
     </form>
-
-
-	<div>
-		<br />
-		<p>Accessed Database</p>
-		<?php include('../php/AccessDb.php'); ?>
-	</div>
 
     <span>
         <br />
