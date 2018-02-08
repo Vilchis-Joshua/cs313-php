@@ -24,10 +24,15 @@
 	<?php
 	include('AccessDb.php');
 	echo '<br />' . 'gg' . '<br />';
-	foreach ($db->query('SELECT product_id, product_name, product_price, product_description  FROM public.PRODUCT') as $row)
+	foreach ($db->query('SELECT now()') as $row)
+	{
+		print "<p>$row[0]</p>\n\n";
+	}
+	
+	foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row)
            {
 			  echo "hello";
-              echo '<tr><td><b>' . $row[product_name].' '. $row[product_price].':' .$row[product_description] . '</b>' . ' </td></tr>';
+              echo '<tr> <td><b>' .$row[scriptures_book].' '. $row[scriptures_chapter].':' .$row[scriptures_verse]. '</b> - "' .$row[scriptures_content].'" </td></tr>';
            }
 		echo "coming here?";
 		include('closeDb.php');
@@ -38,10 +43,6 @@
     </div>
 </body>
 </html>
-
-
-
-
 	<?php
 #		foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row) {
 #			echo '<tr><td><b>' . $row[scriptures_book] . ' ' . $row[scriptures_chapter] . ':' . $row[scriptures_verse] . '</b> - "' . $row[scriptures_content] . '"</td></tr>';
