@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\web"
+    "\\web",
+    "\\web\\index",
+    "\\web\\index\\assignments\\week05"
   ],
-  "SelectedNode": "\\composer.lock",
+  "SelectedNode": "\\web\\index\\AccessDb.php",
   "PreviewInSolutionExplorer": false
 }
