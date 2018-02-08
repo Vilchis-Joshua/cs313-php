@@ -1,5 +1,5 @@
 <?PHP session_start(); ?>
-<?php include('AccessDb.php'); ?>
+<?php include('AccessDb.php'); echo "hello World!"; ?>
 
 <!DOCTYPE HTML>
 <html>
