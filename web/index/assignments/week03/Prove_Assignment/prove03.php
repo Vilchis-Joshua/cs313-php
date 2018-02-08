@@ -49,7 +49,7 @@
 	<div>
 		<br />
 		<p>Accessed Database</p>
-		<?php include('AccessDb.php'); ?>
+		<?php include('../php/AccessDb.php'); ?>
 	</div>
 
     <span>
