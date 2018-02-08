@@ -1,6 +1,4 @@
 <?PHP session_start(); ?>
-<?php include('AccessDb.php'); echo "hello World!"; ?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -15,10 +13,6 @@
 			$_SESSION["product"] = array();
 		}
 	?>
-
-	<div>
-		<?php include('AccessDb.php'); ?>
-	</div>
 
     <form action="viewcart.php" method="post">
         <div class="prod">
@@ -51,6 +45,12 @@
         <input class="inputButton" value="Add" type="submit"/>
     </form>
 
+
+	<div>
+		<br />
+		<p>Accessed Database</p>
+		<?php include('AccessDb.php'); ?>
+	</div>
 
     <span>
         <br />
