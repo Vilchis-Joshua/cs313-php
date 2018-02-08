@@ -20,13 +20,14 @@
 		<?PHP include('php/AccessDb.php'); ?>
 		<br />
 	</div
+	<?php
+		echo 'table id="scriptures"';
+		foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM public.scripture') as $row) {
+			echo '<tr><td>'.$row[scriptures_book] . ' ' . $row[scriptures_chapter] . ':' . $row[scriptures_verse] . $row[scriptures_content] . '</td>';
+		}
 
-	echo 'table id="scriptures"';
-	foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM public.scripture') as $row) {
-		echo '<tr><td>'.$row[scriptures_book] . ' ' . $row[scriptures_chapter] . ':' . $row[scriptures_verse] . $row[scriptures_content] . '</td>';
-	}
-
-	echo '</table>';
+		echo '</table>';
+	?>
     <div>
         <a href="../../index.html">Assignment Index</a>
     </div>
