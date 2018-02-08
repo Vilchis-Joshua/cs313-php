@@ -30,6 +30,6 @@
 
 	foreach ($db->query('SELECT now()') as $row)
 	{
-	 print "<p>$row[0]</p>\n\n";
+		print "<p>$row[0]</p>\n\n";
 	}
 ?>
