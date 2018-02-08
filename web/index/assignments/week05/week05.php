@@ -23,22 +23,12 @@
 
 	<?php
 	include('AccessDb.php');
-	echo '<br />' . 'gg' . '<br />';
-	foreach ($db->query('SELECT now()') as $row)
-	{
-		print "<p>$row[0]</p>\n\n";
-	}
 	
 	$statement = $db->query('SELECT product_name, product_price FROM PRODUCT');
 	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 	echo $results;
-	foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row)
-           {
-			  echo "hello";
-              echo '<tr> <td><b>' .$row[scriptures_book].' '. $row[scriptures_chapter].':' .$row[scriptures_verse]. '</b> - "' .$row[scriptures_content].'" </td></tr>';
-           }
-		echo "coming here?";
-		include('closeDb.php');
+
+	include('closeDb.php');
 	?>
 	</table>
     <div>
