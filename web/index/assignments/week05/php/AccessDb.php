@@ -1,11 +1,11 @@
 <?php
 
 // default Heroku Postgres configuration URL
-$dbUrl = getenv('DATABASE_URL');
+	$dbUrl = getenv('DATABASE_URL');
 
 	if (empty($dbUrl)) {
-	 // example localhost configuration URL with postgres username and a database called cs313db
-	 $dbUrl = "postgres://postgres:hello@127.0.0.1:5433/scripture";
+		// example localhost configuration URL with postgres username and a database called cs313db
+		$dbUrl = "postgres://postgres:hello@127.0.0.1:5433/scripture";
 	}
 
 	$dbopts = parse_url($dbUrl);
@@ -24,8 +24,8 @@ $dbUrl = getenv('DATABASE_URL');
 		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 	}
 	catch (PDOException $ex) {
-	 print "<p>error: $ex->getMessage() </p>\n\n";
-	 die();
+		print "<p>error: $ex->getMessage() </p>\n\n";
+		die();
 	}
 
 	foreach ($db->query('SELECT now()') as $row)
