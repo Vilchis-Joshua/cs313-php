@@ -27,12 +27,6 @@
 			echo '<tr><td><b>' . $row[product_id] . ' ' . $row[product_name] . ':' . $row[product_price] . '</b> - "' . $row[product_description] . '"</td></tr>';
 		}	
 	?>
-
-#	<?php
-#		foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row) {
-#			echo '<tr><td><b>' . $row[scriptures_book] . ' ' . $row[scriptures_chapter] . ':' . $row[scriptures_verse] . '</b> - "' . $row[scriptures_content] . '"</td></tr>';
-#		}	
-#	?>
 	</table>
     <div>
         <a href="../../index.html">Assignment Index</a>
