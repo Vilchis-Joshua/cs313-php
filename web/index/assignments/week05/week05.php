@@ -1,5 +1,4 @@
 <?PHP session_start(); ?>
-<?PHP include('php/AccessDb.php'); ?>
 
 <!DOCTYPE HTML>
 <html>
@@ -15,6 +14,12 @@
             Submit: <input name="try" type="submit" />
         </form>
     </div>
+
+	<div>
+		<br />
+		<?PHP include('php/AccessDb.php'); ?>
+		<br />
+	</div
 
     <div>
         <a href="../../index.html">Assignment Index</a>
