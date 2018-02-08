@@ -12,7 +12,12 @@
 			$_SESSION["product"] = array();
 		}
 	     include('AccessDb.php');
+	
+		foreach ($db->query('SELECT product_id, product_name, product_price, product_description FROM public.PRODUCT') as $row) {
+			echo '<tr><td><b>' . $row[product_name] . ': ' . $row[product_price] . ':<br />' . $row[product_description] . '</td></tr>';
+		}	
 	?>
+
 
     <form action="viewcart.php" method="post">
         <div class="prod">
