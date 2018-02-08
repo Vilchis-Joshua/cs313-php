@@ -8,13 +8,10 @@
 </head>
 <body>
 	<?PHP
-		session_start();
 		if (empty($_SESSION["product"])) {
 			$_SESSION["product"] = array();
 		}
-			<div>
-		<br />
-	     include('../php/AccessDb.php');
+	     include('AccessDb.php');
 	?>
 
     <form action="viewcart.php" method="post">
