@@ -29,6 +29,8 @@
 		print "<p>$row[0]</p>\n\n";
 	}
 	
+	$statement = $db->query('SELECT product_name, product_price FROM PRODUCT');
+	$results = $statement->fetchAll(PDO::FETCH_ASSOC);
 	echo $db->query('SELECT PRODUCT_NAME FROM PRODUCT WHERE PRODUCT_ID = 1');
 	foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row)
            {
