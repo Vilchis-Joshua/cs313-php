@@ -28,8 +28,8 @@ $dbUrl = getenv('DATABASE_URL');
 	 die();
 	}
 
-	foreach ($db->query('SELECT now()') as $row)
-	{
-	 print "<p>$row[0]</p>\n\n";
-	}
+#	foreach ($db->query('SELECT now()') as $row)
+#	{
+#	 print "<p>$row[0]</p>\n\n";
+#	}
 ?>

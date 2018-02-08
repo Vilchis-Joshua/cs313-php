@@ -16,6 +16,10 @@
 		}
 	?>
 
+	<div>
+		<?php include('AccessDb.php'); ?>
+	</div>
+
     <form action="viewcart.php" method="post">
         <div class="prod">
             <div id="bacon">
