@@ -23,7 +23,7 @@
 
 	<?php
 	include('php/AccessDb.php');
-		
+	echo '<br />' . 'gg' . '<br />';
 	foreach ($db->query('SELECT scriptures_id, scriptures_book, scriptures_chapter, scriptures_verse, scriptures_content FROM scripture.scriptures') as $row)
            {
 			  echo "hello";
@@ -32,7 +32,6 @@
 		echo "coming here?";
 		include('php/closeDb.php');
 	?>
-
 	</table>
     <div>
         <a href="../../index.html">Assignment Index</a>
