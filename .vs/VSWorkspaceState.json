@@ -4,10 +4,8 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week03\\Prove_Assignment",
-    "\\web\\index\\assignments\\week03\\Prove_Assignment\\Pictures",
-    "\\web\\index\\assignments\\week05"
+    "\\web\\index\\php"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week05\\closeDb.php",
+  "SelectedNode": "\\week05.sql",
   "PreviewInSolutionExplorer": false
 }
