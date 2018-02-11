@@ -12,3 +12,10 @@ a:visited, a:link {
     text-decoration: none;
     color: #FF3B3F;
 }
+
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
