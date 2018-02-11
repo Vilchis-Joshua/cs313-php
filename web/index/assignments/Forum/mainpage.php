@@ -15,6 +15,7 @@
     </nav>
 
     <div>
+	<br /><br />
 		<img src="pics/cyberbullying1.jpg" height="256" width="256"/>
     </div>
 
