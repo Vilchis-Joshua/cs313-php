@@ -16,10 +16,6 @@
     </nav>
 
     <div>
-		<img src="pics/cyberbullying1.jpg"/>
-    </div>
-
-    <div>
         <p>
             Check out some of the most recent articles on cyberbullying
         </p>
