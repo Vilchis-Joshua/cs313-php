@@ -9,6 +9,12 @@
 <body>
     <h2>Welcome to CBA</h2>
 
+    <nav id="navigation">
+        <a href="information.php">Information</a> |
+        <a href="forum.php">Forum</a> | 
+        <a href="signin.php">Sign in</a>
+    </nav>
+
     <div>
         <p id="intro">
             What is CBA? CBA is Cyberbullying Awareness. In current society, there have been more and more problems with bullying <br />
@@ -20,23 +26,18 @@
     </div>
 
     <div>
-        <br />
-        <br />
+        <p>
+            Check out some of the most recent articles on cyberbullying
+        </p>
     </div>
-    <table id="scripts">
 
-        <?php
-        include('AccessDb.php');
-
-        $statement = $db->query('SELECT product_name, product_price FROM PRODUCT');
-        $results = $statement->fetchAll(PDO::FETCH_ASSOC);
-        echo $results;
-
-        include('closeDb.php');
-        ?>
-    </table>
     <div>
-        <a href="../../index.html">Assignment Index</a>
+        <p>
+            There will be written here.
+        </p>
+    </div>
+    <div class="footer">
+        <a id="footerLink" href="../../index.html">Assignment Index</a>
     </div>
 </body>
 </html>
