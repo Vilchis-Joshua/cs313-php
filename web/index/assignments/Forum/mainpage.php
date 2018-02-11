@@ -8,7 +8,6 @@
 </head>
 <body>
     <h2>Welcome to CBA</h2>
-
     <nav id="navigation">
         <a href="forum.php">Forum</a> |
         <a href="about.php">About</a> |

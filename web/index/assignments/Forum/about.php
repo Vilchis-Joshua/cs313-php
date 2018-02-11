@@ -7,15 +7,13 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-    <h2>Welcome to CBA</h2>
+    <h2>About</h2>
 
     <nav id="navigation">
         <a href="mainpage.php">Main page</a> |
         <a href="forum.php">Forum</a> |
         <a href="signin.php">Sign in</a>
     </nav>
-
-
 
     <div>
         <p id="intro">

@@ -12,7 +12,7 @@
 	</style>
 </head>
 <body>
-    <h2>Welcome to CBA</h2>
+    <h2>Sign in</h2>
 
     <nav id="navigation">
         <a href="mainpage.php">Main Page</a> |

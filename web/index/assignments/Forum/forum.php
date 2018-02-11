@@ -7,7 +7,7 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-    <h2>Welcome to CBA</h2>
+    <h2>Forum</h2>
 
     <nav id="navigation">
         <a href="forum.php">Forum</a> |
