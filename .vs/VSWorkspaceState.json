@@ -4,9 +4,11 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week03",
-    "\\web\\index\\assignments\\week03\\storeWebsite"
+    "\\web\\index\\assignments\\Forum",
+    "\\web\\index\\assignments\\Forum\\css",
+    "\\web\\index\\assignments\\week03\\storeWebsite",
+    "\\web\\index\\assignments\\week05"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week03\\storeWebsite\\viewcart.php",
+  "SelectedNode": "\\web\\index\\assignments\\Forum\\css\\forum.css",
   "PreviewInSolutionExplorer": false
 }
