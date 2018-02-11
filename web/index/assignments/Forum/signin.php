@@ -5,6 +5,11 @@
     <title>Week03 Team Activity</title>
     <link rel="stylesheet" type="text/css" href="css/mainpage.css" />
     <script src="js/mainpage.js"></script>
+		<style>
+		#scripts, #scripts td {
+			border: 1px black solid;
+		}
+	</style>
 </head>
 <body>
     <h2>Welcome to CBA</h2>
@@ -25,14 +30,16 @@
         </p>
     </div>
     <div>
-		<?PHP
+		<table>
+			<?PHP
 
-			include('php/AccessDb.php');
+				include('php/AccessDb.php');
 	
-			foreach ($db->query('SELECT product_id, product_name, product_price, product_description FROM public.PRODUCT') as $row) {
-				echo '<tr><td><b>' . $row[product_name] . ': ' . $row[product_price] . ':<br />' . $row[product_description] . '</td></tr>';
-			}	
-	?>
+				foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
+					echo '<tr><td><b>' . $row[users_id] . ': ' . $row[users_username] . ':<br />' . $row[users_password] . '</td></tr>';
+				}	
+		?>
+		</table>
     </div>
     <div class="footer">
         <a id="footerLink" href="../../index.html">Assignment Index</a>
