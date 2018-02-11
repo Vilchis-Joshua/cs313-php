@@ -10,7 +10,6 @@
     <h2>Welcome to CBA</h2>
 
     <nav id="navigation">
-        <a href="information.php">Information</a> |
         <a href="forum.php">Forum</a> |
         <a href="about.php">About</a> |
         <a href="signin.php">Sign in</a>
