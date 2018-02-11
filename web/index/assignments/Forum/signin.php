@@ -36,7 +36,7 @@
 				include('php/AccessDb.php');
 	
 				foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
-					echo '<tr><td><b>' . $row[users_id] . ': ' . $row[users_username] . ' ' . $row[users_password] . '</td></tr>';
+					echo '<tr><td><b>' . $row[users_id] . ': ' . $row[users_username] . '<br />\tPassword:' . $row[users_password] . '</td></tr>';
 				}	
 		?>
 		</table>
