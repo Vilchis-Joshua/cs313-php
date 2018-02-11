@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+	session_start();
+	include('AccessDb.php');
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -22,7 +25,14 @@
 				echo "$i) " . "$item" . "<br/>";
 				$i++;
 			}
+			foreach ($db->query('SELECT product_id, product_name, product_price, product_description FROM public.PRODUCT') as $row) {
+				if ($row[product_name]) {
+					UPDATE PRODUCT WHERE $row[product_name] =]
+				}
+			}	
 			$_SESSION["Product"] = $cart_items;
+
+
 		?>
 	</div>
 

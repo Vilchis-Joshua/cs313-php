@@ -4,8 +4,9 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\php"
+    "\\web\\index\\assignments\\week03",
+    "\\web\\index\\assignments\\week03\\storeWebsite"
   ],
-  "SelectedNode": "\\week05.sql",
+  "SelectedNode": "\\web\\index\\assignments\\week03\\storeWebsite\\viewcart.php",
   "PreviewInSolutionExplorer": false
 }

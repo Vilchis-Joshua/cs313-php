@@ -11,11 +11,11 @@
 #		if (empty($_SESSION["product"])) {
 #			$_SESSION["product"] = array();
 #		}
-#	     include('AccessDb.php');
+	    include('AccessDb.php');
 #	
-#		foreach ($db->query('SELECT product_id, product_name, product_price, product_description FROM public.PRODUCT') as $row) {
-#			echo '<tr><td><b>' . $row[product_name] . ': ' . $row[product_price] . ':<br />' . $row[product_description] . '</td></tr>';
-#		}	
+		foreach ($db->query('SELECT product_id, product_name, product_price, product_description FROM public.PRODUCT') as $row) {
+			echo '<tr><td><b>' . $row[product_name] . ': ' . $row[product_price] . ':<br />' . $row[product_description] . '</td></tr>';
+		}	
 	?>
 
 
@@ -23,28 +23,65 @@
         <div class="prod">
             <div id="bacon">
                 <img src="Pictures/bacon.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="bacon" />
+                <input type="checkbox" name="product[]" value="bacon" 
+				<?php if ($row[product_name] == 'bacon' && isset($row[product_isBought]) { echo checked; }?>				
+				/>
             </div>
             <div id="oj">
                 <img src="Pictures/oj.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="oj" />
+                <input type="checkbox" name="product[]" value="oj" 
+								<?php 
+				foreach ($db->query('SELECT product_name, product_isBought FROM public.PRODUCT') as $row) {
+					if (isset($row[product_isBought]) && $row[product_name] == 'OrangeJuice') {
+						echo 'checked';
+					}
+				} ?>				
+				/>
             </div>
             <div id="hashbrowns">
                 <img src="Pictures/hashbrowns.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="hashbrowns"/>
+                <input type="checkbox" name="product[]" value="hashbrowns"
+								<?php 
+				foreach ($db->query('SELECT product_name, product_isBought FROM public.PRODUCT') as $row) {
+					if (isset($row[product_isBought]) && $row[product_name] == 'Bacon') {
+						echo 'checked';
+					}
+				} ?>				
+				/>
             </div>
 
             <div id="tables">
                 <img src="Pictures/table.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="tables" />
+                <input type="checkbox" name="product[]" value="tables" 
+								<?php 
+				foreach ($db->query('SELECT product_name, product_isBought FROM public.PRODUCT') as $row) {
+					if (isset($row[product_isBought]) && $row[product_name] == 'Bacon') {
+						echo 'checked';
+					}
+				} ?>				
+				/>
             </div>
             <div id="chair">
                 <img src="Pictures/chari.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="chair" />
+                <input type="checkbox" name="product[]" value="chair" 
+								<?php 
+				foreach ($db->query('SELECT product_name, product_isBought FROM public.PRODUCT') as $row) {
+					if (isset($row[product_isBought]) && $row[product_name] == 'Bacon') {
+						echo 'checked';
+					}
+				} ?>				
+				/>
             </div>
             <div id="plates">
                 <img src="Pictures/plate.jpg" width="200" height="200" />
-                <input type="checkbox" name="product[]" value="plates" /> 
+                <input type="checkbox" name="product[]" value="plates" 
+								<?php 
+				foreach ($db->query('SELECT product_name, product_isBought FROM public.PRODUCT') as $row) {
+					if (isset($row[product_isBought]) && $row[product_name] == 'Bacon') {
+						echo 'checked';
+					}
+				} ?>				
+				/>
             </div>
         </div>
         <input class="inputButton" value="Add" type="submit"/>

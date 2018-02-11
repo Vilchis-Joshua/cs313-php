@@ -5,7 +5,7 @@ $dbUrl = getenv('HEROKU_POSTGRESQL_CHARCOAL_URL');
 
 	if (empty($dbUrl)) {
 	 // example localhost configuration URL with postgres username and a database called cs313db
-	 $dbUrl = "postgres://postgres:hello@127.0.0.1:5433/public";
+	 $dbUrl = "postgres://postgres:hello@127.0.0.1:5433/postgres";
 	}
 
 	$dbopts = parse_url($dbUrl);
