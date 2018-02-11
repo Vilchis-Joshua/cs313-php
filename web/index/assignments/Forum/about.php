@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Week03 Team Activity</title>
-    <link rel="stylesheet" type="text/css" href="css/mainpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/about.css" />
     <script src="js/mainpage.js"></script>
 </head>
 <body>
