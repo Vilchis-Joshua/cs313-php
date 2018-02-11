@@ -26,6 +26,9 @@
     <table id="scripts">
 	</table>
     <div>
+		<br /><br />
+		<a href="dummy.html">DUMMY SITE</a>
+		<br /><br />
         <a href="../../index.html">Assignment Index</a>
     </div>
 </body>
