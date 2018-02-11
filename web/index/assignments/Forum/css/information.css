@@ -1,0 +1,14 @@
+body {
+    background-color: #a9a9a9;
+}
+
+a:hover, a:active {
+    background-color: #CAEBF2;
+    text-decoration: underline;
+    font-size: 120%;
+}
+
+a:visited, a:link {
+    text-decoration: none;
+    color: #FF3B3F;
+}
