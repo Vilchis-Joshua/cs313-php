@@ -16,7 +16,7 @@
     </nav>
 
     <div>
-		<img src="http://resources.uknowkids.com/blog/bid/159164/global-perspective-on-cyberbullying"/>
+		<img src="pics/cyberbullying1.jpg"/>
     </div>
 
     <div>

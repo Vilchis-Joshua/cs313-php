@@ -27,17 +27,15 @@
         </p>
     </div>
 
-    <div>
-        <p>
-            Check out some of the most recent articles on cyberbullying
-        </p>
-    </div>
 
-    <div>
-        <p>
-            There will be some articles around here written here.
-        </p>
-    </div>
+	<div>
+		<p>
+			My name is Joshua Vilchis. I really hate to see any kind of bullying, but cyberbullying is becoming something of <br />
+			a fad because of the internet and "trolls". It's easy to hide your face behind anomynity.
+		</p>
+	</div>
+
+
     <div class="footer">
 		<a href="dummy.html">Dummy</a>
         <a id="footerLink" href="../../index.html">Assignment Index</a>
