@@ -37,7 +37,7 @@
 	</div>
 			<?PHP
 
-				include('php/AccessDb.php');
+			include('php/AccessDb.php');
 	
 #				foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
 #					echo '<tr><td><b>' . $row[users_id] . ') Username: ' . $row[users_username] . '<br />       password:' . $row[users_password] . '</td></tr>';
@@ -47,20 +47,20 @@
 #				$password = 'asdf';
 #				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 #				$stmt->bindValue(':password', $password, PDO::PARAM_STR);
-				$stmt = $db->prepare("SELECT users_id, users_username, users_password FROM user");
-				$stmt->execute();
+			$stmt = $db->prepare("SELECT users_id, users_username, users_password FROM users");
+			$stmt->execute();
 
-				while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-					echo '<p> Hello World</p>';
-					echo '<p>';
-						echo '<strong>' . $row['users_id'] . '</strong>) ';
-						echo $row['users_username'] . ' - ' . $row['users_password'];
-					echo '</p>';				
-				}
+			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+				echo '<p> Hello World</p>';
+				echo '<p>';
+					echo '<strong>' . $row['users_id'] . '</strong>) ';
+					echo $row['users_username'] . ' - ' . $row['users_password'];
+				echo '</p>';				
+			}
 
-				echo 'Hello world';
+			echo 'Hello world';
 
-			?>
+		?>
     </div>
     <div class="footer">
 	<a href="dummy.html">Dummy</a>
