@@ -24,7 +24,7 @@
 			. $row['users_id'] 
 			. ') username - ' . $row['users_username'] . '<br />'
 			. 'password - ' . $row['users_password'] . '<br />'
-			.  '</p>'
+			.  '</p>';
 		}
 	</body>
 	</html>
