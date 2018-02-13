@@ -30,6 +30,11 @@
         </p>
     </div>
     <div>
+
+	<div id="signin">
+		<p>Already a member? Signin!</p>
+
+	</div>
 		<table>
 			<?PHP
 
@@ -38,11 +43,27 @@
 				foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
 					echo '<tr><td><b>' . $row[users_id] . ') Username: ' . $row[users_username] . '<br />       password:' . $row[users_password] . '</td></tr>';
 				}	
-		?>
+				
+				$username = 'jsvilchis';
+				$password = 'asdf';
+
+				$stmt = $db->prepare('SELECT * FROM user WHERE username=:username AND password=:password');
+				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
+				$stmt->bindValue(':password', $password, PDO::PARAM_STR);
+				stmt->execute();
+				echo 'Stuff: <br />' . $rowsChanged;
+				$rowsChanged = $stmt->rowCount();
+				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				echo 'Stuff 2 : <br />' . $rowsChanged;
+
+
+
+			?>
 		</table>
     </div>
     <div class="footer">
-        <a id="footerLink" href="../../index.html">Assignment Index</a>
+	<a href="dummy.html">Dummy</a>
+	<a id="footerLink" href="../../index.html">Assignment Index</a>
     </div>
 </body>
 </html>

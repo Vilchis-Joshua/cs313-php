@@ -3,70 +3,23 @@
 <html>
 <head>
     <title>Week03 Team Activity</title>
-    <link rel="stylesheet" type="text/css" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="css/signin.css" />
     <script src="js/mainpage.js"></script>
+    <style>
+        #scripts, #scripts td {
+            border: 1px black solid;
+        }
+    </style>
 </head>
 <body>
-    <div class="ct" id="t1">
-        <div class="ct" id="t2">
-            <div class="ct" id="t3">
-                <div class="ct" id="t4">
-                    <div class="ct" id="t5">
-                        <ul id="menu">
-                            <a href="mainpage.php"><li class="icon fa fa-bolt" id="uno"></li>MainPage</a>
-                            <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a>
-                            <a href="#t3"><li class="icon fa fa-rocket" id="tres"></li></a>
-                            <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a>
-                            <a href="#t5"><li class="icon fa fa-plus-circle" id="cinco"></li></a>
-                        </ul>
-                        <div class="page" id="p1">
-                            <section class="icon fa fa-bolt"><span class="title">Bolt</span><span class="hint">Like this pen to see the magic!...<br> Just kidding, it won't happen anything but I'll be really happy If you do so.</span></section>
-                        </div>
-                        <div class="page" id="p2">
-                            <section class="icon fa fa-keyboard-o"><span class="title">Type</span></section>
-                        </div>
-                        <div class="page" id="p3">
-                            <section class="icon fa fa-rocket"><span class="title">Rocket</span></section>
-                        </div>
-                        <div class="page" id="p4">
-                            <section class="icon fa fa-dribbble">
-                                <span class="title">Dribbble</span>
-                                <p class="hint">
-                                    <a href="https://dribbble.com/albertohartzet" target="_blank">Im ready to play, <span class="hint line-trough">invite me </span> find me</a>
-                                </p>
-                                <p class="hint">Already invited by <a href="http://www.dribbble.com/mrpeters" target="_blank">Stan Peters</a></p>
-                            </section>
-                        </div>
-                        <div class="page" id="p5">
-                            <section class="icon fa fa-plus-circle">
-                                <span class="title">More</span>
-                                <p class="hint">
-                                    <span>You love one page & CSS only stuff? </span><br />
-                                    <a href="https://codepen.io/hrtzt/details/pgXMYb/" target="_blank">check this pen "Pure CSS One page vertical navigation"</a>
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h2>Sign in</h2>
 
-
-
-    <!--<nav id="navigation">
-        <
-        <a href="mainpage.php">Main page</a> |
+    <nav id="navigation">
+        <a href="mainpage.php">Main Page</a> |
         <a href="forum.php">Forum</a> |
-        <a href="signin.php">Sign in</a>
+        <a href="about.php">About</a> |
     </nav>
 
-    <div>
-        <p>
-            Having seen the harms of cyberbullying and wondering how many people it effects, I decided to make this forum as a hub for people who are struggling, a <br />
-            support group, and to provide information for those around us.
-        </p>
-    </div>
     <div>
         <p id="intro">
             What is CBA? CBA is Cyberbullying Awareness. In current society, there have been more and more problems with bullying <br />
@@ -76,20 +29,27 @@
             so that we can better work towards a solution.
         </p>
     </div>
-
     <div>
-        <p>
-            Check out some of the most recent articles on cyberbullying
-        </p>
-    </div>
 
-    <div>
-        <p>
-            There will be some articles around here written here.
-        </p>
+        <div id="signin">
+            <p>Already a member? Signin!</p>
+            Username: <input type="text" /><br />
+            Password: <input type="password" />
+        </div>
+        <table>
+            <?PHP
+
+                include('php/AccessDb.php');
+
+                foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
+                echo '
+                <tr><td>' . $row[users_id] . ') Username: ' . $row[users_username] . '<br />       password:' . $row[users_password] . '</td></tr>';
+                }
+            ?>
+        </table>
     </div>
     <div class="footer">
         <a id="footerLink" href="../../index.html">Assignment Index</a>
-    </div>-->
+    </div>
 </body>
 </html>

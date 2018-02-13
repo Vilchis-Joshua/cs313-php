@@ -10,7 +10,7 @@
     <h2>Forum</h2>
 
     <nav id="navigation">
-        <a href="forum.php">Forum</a> |
+        <a href="mainpage.php">Main Page</a> |
         <a href="about.php">About</a> |
         <a href="signin.php">Sign in</a>
     </nav>
