@@ -35,7 +35,6 @@
 		<p>Already a member? Signin!</p>
 
 	</div>
-		<table>
 			<?PHP
 
 				include('php/AccessDb.php');
@@ -62,7 +61,6 @@
 				echo 'Hello world';
 
 			?>
-		</table>
     </div>
     <div class="footer">
 	<a href="dummy.html">Dummy</a>
