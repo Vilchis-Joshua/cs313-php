@@ -15,10 +15,11 @@
 	}
 ?>
 
-	<!DOCTYPE html>
-	<head>
-	</head>
-	<body>
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+	<?PHP
 		foreach ($users_list as $row) {
 			echo '<p>' 
 			. $row['users_id'] 
@@ -26,5 +27,6 @@
 			. 'password - ' . $row['users_password'] . '<br />'
 			.  '</p>';
 		}
-	</body>
-	</html>
+	?>
+</body>
+</html>
