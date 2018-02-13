@@ -53,7 +53,7 @@
 				stmt->execute();
 				echo 'Stuff: <br />' . $rowsChanged;
 				$rowsChanged = $stmt->rowCount();
-				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+#				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 				echo 'Stuff 2 : <br />' . $rowsChanged;
 
 
