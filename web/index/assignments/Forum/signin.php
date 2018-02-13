@@ -38,7 +38,7 @@
 			<?PHP
 
 			include('php/AccessDb.php');
-			echo 'Below this: <br />'
+			echo 'Below this: <br />';
 			include('php/user_list.php');
 #				foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
 #					echo '<tr><td><b>' . $row[users_id] . ') Username: ' . $row[users_username] . '<br />       password:' . $row[users_password] . '</td></tr>';
