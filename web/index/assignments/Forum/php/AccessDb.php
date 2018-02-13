@@ -31,7 +31,7 @@
 	}
 
 
-	include('generateUserList.php')
+	include('user_list.php')
 #	foreach ($db->query('SELECT now()') as $row)
 #	{
 #		print "<p>$row[0]</p>\n\n";
