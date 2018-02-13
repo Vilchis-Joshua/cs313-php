@@ -51,9 +51,9 @@
 				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 				$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 				$stmt->execute();
-#				$rowsChanged = $stmt->rowCount();
-#				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-#				echo 'Stuff 2 : <br />' . $rowsChanged;
+				$rowsChanged = $stmt->rowCount();
+				$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+				echo 'Stuff :    ' . count($rows, $COUNT_RECURSIVE);
 
 
 
