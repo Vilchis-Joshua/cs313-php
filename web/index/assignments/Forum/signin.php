@@ -48,7 +48,7 @@
 #				$password = 'asdf';
 #				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 #				$stmt->bindValue(':password', $password, PDO::PARAM_STR);
-				$stmt = $db->prepare('SELECT users_id, users_username, users_password FROM user');
+				$stmt = $db->prepare("SELECT users_id, users_username, users_password FROM user");
 				$stmt->execute();
 
 				while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -58,6 +58,8 @@
 						echo $row['users_username'] . ' - ' . $row['users_password'];
 					echo '</p>';				
 				}
+
+				echo 'Hello world';
 
 			?>
 		</table>
