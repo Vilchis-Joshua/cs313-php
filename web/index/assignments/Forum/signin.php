@@ -48,7 +48,7 @@
 				$password = 'asdf';
 
 				$stmt = $db->prepare('SELECT * FROM user WHERE username=:username AND password=:password');
-#				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
+				$stmt->bindValue(':username', $username, PDO::PARAM_STR);
 #				$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 #				stmt->execute();
 #				$rowsChanged = $stmt->rowCount();
