@@ -5,9 +5,8 @@
     "\\web\\index",
     "\\web\\index\\assignments",
     "\\web\\index\\assignments\\Forum",
-    "\\web\\index\\assignments\\Forum\\pics",
     "\\web\\index\\assignments\\week05"
   ],
-  "SelectedNode": "\\web\\index.html",
+  "SelectedNode": "\\web\\index\\assignments\\Forum\\php",
   "PreviewInSolutionExplorer": false
 }
