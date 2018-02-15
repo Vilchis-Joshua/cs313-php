@@ -11,7 +11,6 @@
 
     <nav id="navigation">
         <a href="mainpage.php">Main Page</a> |
-        <a href="about.php">About</a> |
         <a href="signin.php">Sign in</a>
     </nav>
 

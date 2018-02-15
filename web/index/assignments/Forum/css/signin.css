@@ -1,5 +1,5 @@
 body {
-    background-color: #a9a9a9;
+    background-color: rgb(204, 204, 204);
 }
 
 a:hover, a:active {
@@ -30,3 +30,12 @@ a:visited, a:link {
     text-align: center;
 }
 
+#signup, #signin {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+}

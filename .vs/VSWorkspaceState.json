@@ -3,10 +3,8 @@
     "",
     "\\web",
     "\\web\\index",
-    "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\Forum",
-    "\\web\\index\\assignments\\week05"
+    "\\web\\index\\php"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\Forum\\php",
+  "SelectedNode": "\\web\\index\\php\\AccessDb.php",
   "PreviewInSolutionExplorer": false
 }
