@@ -28,7 +28,7 @@
 				$username = $_POST['username'];
 				$password = $_POST['password'];
 				echo "working?";
-				#$stmt->execute();
+				$stmt->execute();
 				echo "Yes";
 			?>
 		</p>
