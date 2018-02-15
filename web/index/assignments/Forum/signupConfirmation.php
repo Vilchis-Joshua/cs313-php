@@ -27,6 +27,7 @@
 				$password = $_POST['password'];
 				echo "working?";
 				$stmt->execute();
+				$newId = $pdo->lastInsertId('users_id_sequence');
 				echo "Yes";
 			?>
 		</p>
