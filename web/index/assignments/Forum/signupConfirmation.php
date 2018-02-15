@@ -17,8 +17,8 @@
 				echo "Welcome " . $_POST['username'] . '<br />';
 				echo "Your password is: " . $_POST['password'];
 				
-				#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
-				#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
+				GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
+				GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
 				#$stmt = $db->prepare("INSERT INTO USERS VALUES(DEFAULT, $_POST['username'], $_POST['password'])");
 				echo "working?";
 				#$stmt->execute();
