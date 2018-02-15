@@ -21,25 +21,23 @@
 
 				#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
 				#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
-				$stmt = $db->prepare("INSERT INTO USERS(users_username, users_password) VALUES(:username, :password)");
+				$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
+
 				$stmt->bindParam(':username', $username);
 				$stmt->bindParam(':password', $password);
-
+				
 				$username = $un;
 				$password = $p;
-				echo "working?";
-				$stmt->execute();
-				$newId = $pdo->lastInsertId('users_id_sequence');
-				echo "Yes";
-			?>
+				$newId = $pdo->lastInsertId('users_id_sequence');			?>
 		</p>
     </div>
-	<div>
+		<div>
 		<form action="mainpage.php">
 			<input type="submit" value="Confirm" />
 		</form>
 	</div>
-
-
+	<?php
+		$stmt->execute();
+	?>
 </body>
 </html>
