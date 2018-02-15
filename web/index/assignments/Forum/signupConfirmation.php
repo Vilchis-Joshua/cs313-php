@@ -16,15 +16,17 @@
 				include('php/AccessDb.php');
 				echo "Welcome " . $_POST['username'] . '<br />';
 				echo "Your password is: " . $_POST['password'] . '<br />';
-				
+				$un = $_POST['username'];
+				$p = $_POST['password'];
+
 				#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
 				#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
 				$stmt = $db->prepare("INSERT INTO USERS(users_username, users_password) VALUES(:username, :password)");
 				$stmt->bindParam(':username', $username);
 				$stmt->bindParam(':password', $password);
 
-				$username = $_POST['username'];
-				$password = $_POST['password'];
+				$username = $un;
+				$password = $p;
 				echo "working?";
 				$stmt->execute();
 				$newId = $pdo->lastInsertId('users_id_sequence');
