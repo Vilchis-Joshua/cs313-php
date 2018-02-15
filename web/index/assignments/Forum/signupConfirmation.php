@@ -25,8 +25,8 @@
 				$stmt->bindParam(':password', $password);
 
 				$def = 'DEFAULT';
-				$username = $_POST['username'];
-				$password = $_POST['password'];
+				$username = "$_POST['username']";
+				#$password = $_POST['password'];
 				echo "working?";
 				$stmt->execute();
 				echo "Yes";
