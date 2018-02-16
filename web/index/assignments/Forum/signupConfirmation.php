@@ -25,19 +25,20 @@
 
 				$stmt->bindParam(':username', $username);
 				$stmt->bindParam(':password', $password);
-				
 				$username = $un;
 				$password = $p;
-				$newId = $pdo->lastInsertId('users_id_sequence');			?>
+				$stmt->execute();
+				$newId = $pdo->lastInsertId('users_id_sequence');			
+			?>
 		</p>
     </div>
-		<div>
+	
+	<div>
 		<form action="mainpage.php">
 			<input type="submit" value="Confirm" />
 		</form>
 	</div>
-	<?php
-		$stmt->execute();
-	?>
 </body>
 </html>
+
+
