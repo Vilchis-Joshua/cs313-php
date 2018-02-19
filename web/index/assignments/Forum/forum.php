@@ -16,9 +16,10 @@
 
     <div>
 		<?php
+			echo 'bacon';
 			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			echo 'goodbye';
-			$stmt->execute();
+#			$stmt->execute();
 			
 			echo 'hello world';
 #			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -29,7 +30,7 @@
 #				echo 'hello';
 #				echo '</p>';
 #			}
-		?>
+	    ?>
     </div>
 
     <div>
