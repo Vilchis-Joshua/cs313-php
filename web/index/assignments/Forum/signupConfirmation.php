@@ -11,26 +11,24 @@
 
     <h3>Congratulations! Press the button to below to continue back to the main page.</h3>
     <div id="a">
-		<p>
-			<?php
-				include('php/AccessDb.php');
-				echo "Welcome " . $_POST['username'] . '<br />';
-				echo "Your password is: " . $_POST['password'] . '<br />';
-				$un = $_POST['username'];
-				$p = $_POST['password'];
+		<?php
+			include('php/AccessDb.php');
+			echo "Welcome " . $_POST['username'] . '<br />';
+			echo "Your password is: " . $_POST['password'] . '<br />';
+			$un = $_POST['username'];
+			$p = $_POST['password'];
 
-				#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
-				#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
-				$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
+			#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
+			#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
+			$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
 
-				$stmt->bindParam(':username', $username);
-				$stmt->bindParam(':password', $password);
-				$username = $un;
-				$password = $p;
-				$stmt->execute();
-				$newId = $pdo->lastInsertId('users_id_sequence');			
-			?>
-		</p>
+			$stmt->bindParam(':username', $username);
+			$stmt->bindParam(':password', $password);
+			$username = $un;
+			$password = $p;
+			$stmt->execute();
+			$newId = $pdo->lastInsertId('users_id_sequence');			
+		?>
     </div>
 	
 	<div>
