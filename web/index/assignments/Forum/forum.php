@@ -43,7 +43,7 @@
 		<textarea name="comment" form="commentConf" >Enter text here...</textarea>
 
 		<form id="commentConf" action="commentConfirm.php" method="post">
-			<input type="submit" value="POST" >
+			<input type="submit" value="Post" >
 		</form>
 	</div>
     <div class="footer">

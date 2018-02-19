@@ -10,7 +10,12 @@
     <h2>Sign up</h2>
 
     <h3>Congratulations! Press the button to below to continue back to the main page.</h3>
-    <div id="a">
+    <div>
+		<form action="mainpage.php">
+			<input type="submit" value="Confirm" />
+		</form>
+	</div>
+	<div id="a">
 		<?php
 			include('php/AccessDb.php');
 			echo "Welcome " . $_POST['username'] . '<br />';
@@ -30,12 +35,6 @@
 			$newId = $pdo->lastInsertId('users_id_sequence');			
 		?>
     </div>
-	
-	<div>
-		<form action="mainpage.php">
-			<input type="submit" value="Confirm" />
-		</form>
-	</div>
 </body>
 </html>
 
