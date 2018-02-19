@@ -40,9 +40,9 @@
 
 
 	<div>
-		<textarea name="comment" form="commentConfirm" >Enter text here...</textarea>
+		<textarea name="comment" form="commentConf" >Enter text here...</textarea>
 
-		<form action="commentConfirm.php" method="post">
+		<form id="commentConf" action="commentConfirm.php" method="post">
 			<input type="submit" value="POST" >
 		</form>
 	</div>
