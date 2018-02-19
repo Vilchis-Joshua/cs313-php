@@ -23,7 +23,7 @@
 			foreach ($db->query('SELECT now()') as $row)
 			{
 				
-				$d = to_date($row[0], DD Mon YYYY);
+				$d = $row[0];
 			}
 
 			$stmt = $db->prepare("INSERT INTO public.POST (post_date, post_content) VALUES (:thisdate, :content)");
