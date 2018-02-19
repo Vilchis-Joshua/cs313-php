@@ -16,15 +16,16 @@
 
     <div>
 		<?php
-			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_content FROM discussion");
+			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			$stmt->execute();
 
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				echo '<h2>' . $row['discussion_title'] . '</h2><br />';
-				echo '<h3>' . $row['discussion_content'] . '</h3><br />';
-#				echo '<p>';
+				echo '<h3>' . $row['discussion_initial_content'] . '</h3><br />';
+				echo '<p>';
 #				echo $row['users_username'] . ' - ' . $row['users_password'];
-#				echo '</p>';
+				echo 'hello';
+				echo '</p>';
 			}
 		?>
     </div>
