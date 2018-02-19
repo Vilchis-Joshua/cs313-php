@@ -7,32 +7,31 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-    <h2>Sign up</h2>
 
-    <h3>Congratulations! Press the button to below to continue back to the main page.</h3>
+    <h2>Click confirm to confirm post</h2>
     <div id="a">
 		<?php
 			include('php/AccessDb.php');
-			echo "Welcome " . $_POST['username'] . '<br />';
-			echo "Your password is: " . $_POST['password'] . '<br />';
-			$un = $_POST['username'];
-			$p = $_POST['password'];
-
+			$comment = $_POST['comment'];
+			echo '<p>' . $comment . '</p>';
+			$thisdate;
+			foreach ($db->query('SELECT now()') as $row)
+			{
+				$thisdate =$row[0];
+			}
+			
 			#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
 			#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
-			$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
+			$stmt = $db->prepare("INSERT INTO public.POST (post_id, post_date, post_content) VALUES (:thisdate, :content)");
 
-			$stmt->bindParam(':username', $username);
-			$stmt->bindParam(':password', $password);
-			$username = $un;
-			$password = $p;
+			$stmt->bindParam(':thisdate', $thisdate);
+			$stmt->bindParam(':content', $content);
 			$stmt->execute();
-			$newId = $pdo->lastInsertId('users_id_sequence');			
 		?>
     </div>
 	
 	<div>
-		<form action="mainpage.php">
+		<form action="forum.php">
 			<input type="submit" value="Confirm" />
 		</form>
 	</div>
