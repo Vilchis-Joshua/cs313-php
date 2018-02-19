@@ -16,7 +16,7 @@
 
     <div>
 		<?php
-			include('AccessDb');
+			include('php/AccessDb');
 			echo 'bacon';
 			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			echo 'goodbye';
