@@ -1,8 +1,10 @@
 <?PHP 
+		include('php/AccessDb.php');
+
 #		if (!isset($_SESSION) && empty($_SESSION))
 			session_start();
+
 			$_SESSION["userValue"] = $_POST['userName'];
-			echo "username: " . $_SESSION['userValue'];			
 #			$isTrue = 0;
 #			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
 #			{
@@ -33,9 +35,10 @@
 		</form>
 	</div>
     <div id="a">
-		<?php
-			echo "hello";
-		?>
+	<?php
+		echo 'session: <p>' .  $_SESSION['userValue'] . '</p><br />';
+		echo 'post: <p>' . $_POST['userName'] . '</p><br />';
+	?>
     </div>
 </body>
 </html>
