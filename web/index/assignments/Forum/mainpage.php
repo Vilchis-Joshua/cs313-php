@@ -39,7 +39,7 @@
         </p>
     </div>
     <div class="footer">
-		<a href="dummy.html">Dummy</a>
+#		<a href="dummy.html">Dummy</a>
         <a id="footerLink" href="../../index.html">Assignment Index</a>
     </div>
 </body>
