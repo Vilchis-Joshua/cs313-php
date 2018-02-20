@@ -5,11 +5,11 @@
 			session_start();
 
 			$_SESSION["userValue"] = $_POST['userName'];
-			$isTrue = 0;
-			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
-			{
-				print $row['userValue'];
-			}
+=			$isTrue = 0;
+#			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
+#			{
+#				print $row['userValue'];
+#			}
 		else {
 			echo 'There is a session';
 		}
