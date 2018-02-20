@@ -1,18 +1,18 @@
 <?PHP 
 		include('php/AccessDb.php');
 
-#		if (!isset($_SESSION) && empty($_SESSION))
+		if (!isset($_SESSION) && empty($_SESSION))
 			session_start();
 
 			$_SESSION["userValue"] = $_POST['userName'];
-#			$isTrue = 0;
-#			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
-#			{
-#				print $row['userValue'];
-#			}
-#		else {
-#			include('php/AccessDb.php');
-#		}
+			$isTrue = 0;
+			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
+			{
+				print $row['userValue'];
+			}
+		else {
+			echo 'There is a session';
+		}
 
 		foreach ($db->query('SELECT now()') as $row)
 		{		
@@ -37,7 +37,10 @@
     <div id="a">
 	<?php
 		echo 'session: <p>' .  $_SESSION['userValue'] . '</p><br />';
-		echo 'post: <p>' . $_POST['userName'] . '</p><br />';
+
+		echo 'post: <p>' . $_POST['userName']  . '</p><br />';
+
+
 	?>
     </div>
 </body>
