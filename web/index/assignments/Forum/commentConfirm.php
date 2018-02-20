@@ -21,8 +21,7 @@
 			echo '<p>' . $c . '</p>';
 			$d;
 			foreach ($db->query('SELECT now()') as $row)
-			{
-				
+			{		
 				$d = $row[0];
 			}
 
