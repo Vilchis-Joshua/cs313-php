@@ -1,24 +1,4 @@
-<?PHP 
-		include('php/AccessDb.php');
-
-		if (!isset($_SESSION) && empty($_SESSION))
-			session_start();
-
-			$_SESSION["userValue"] = $_POST['userName'];
-=			$isTrue = 0;
-#			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
-#			{
-#				print $row['userValue'];
-#			}
-		else {
-			echo 'There is a session';
-		}
-
-		foreach ($db->query('SELECT now()') as $row)
-		{		
-			$d = $row[0];
-		}
-?>
+<?PHP session_start(); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -29,6 +9,7 @@
 <body>
 
     <h2>Click confirm to confirm post</h2>
+	
 	<div>
 		<form action="forum.php">
 			<input type="submit" value="Confirm" />
@@ -36,9 +17,26 @@
 	</div>
     <div id="a">
 	<?php
-		echo 'session: <p>' .  $_SESSION['userValue'] . '</p><br />';
+		include('php/AccessDb.php');
+		$_SESSION["userValue"] = $_POST['userName'];
 
-		echo 'post: <p>' . $_POST['userName']  . '</p><br />';
+
+		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue'])) {
+			$result = pg_query($db, 'SELECT users_id FROM USERS WHERE users_username = '); 
+		} else {
+			echo 'You are already logged in.';
+		}
+#		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue']))
+#			
+#			$_SESSION["userValue"] = $_POST['userName'];
+#			echo 'hello';
+#			foreach ($db->query('SELECT * FROM USERS WHERE USERS_ID = $_SESSION['userValue']' as $row)
+#			{
+#				print $row['userValue'];
+#			}
+#		else {
+#			echo 'There is a session';
+#		}
 
 
 	?>
