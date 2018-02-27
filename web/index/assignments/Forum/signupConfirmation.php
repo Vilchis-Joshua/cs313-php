@@ -21,7 +21,7 @@
 			echo "Welcome " . $_POST['username'] . '<br />';
 			echo "Your password is: " . $_POST['password'] . '<br />';
 			$un = $_POST['username'];
-			$un = htmlspecialchars($uns);
+			$un = htmlspecialchars($un);
 			$p = $_POST['password'];
 
 			#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
