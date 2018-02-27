@@ -3,8 +3,6 @@
 <html>
 <head>
     <title>Confirmation</title>
-    <link rel="stylesheet" type="text/css" href="css/signup.css" />
-    <script src="js/mainpage.js"></script>
 </head>
 <body>
 
