@@ -17,24 +17,25 @@
 	</div>
     <div id="a">
 	<?php
-		include('php/AccessDb.php');
-		$_SESSION["userValue"] = $_POST['userName'];
+		$un = $_POST['username'];
+		$p = $_POST['password'];
 
+		include('AccessDb.php');
 
-			$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
-			$stmt->bindValue(':username', $un);
-			$stmt->execute();
+		$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
+		$stmt->bindValue(':username', $un);
+		$stmt->execute();
 
-			$row = $stmt->fetch();
-			$pass = $row['users_password'];
+		$row = $stmt->fetch();
+		$pass = $row['users_password'];
 
-			if (password_verify($p, $pass)) {
-				$_SESSION['username'] = $un;
-				header("Location: week07.php");
-				die();
-			} else {
-				echo 'it failed';
-			}
+		if (password_verify($p, $pass)) {
+			$_SESSION['username'] = $un;
+			header("Location: mainpage.php");
+			die();
+		} else {
+			echo 'it failed';
+		}
 #		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue']))
 #			
 #			$_SESSION["userValue"] = $_POST['userName'];

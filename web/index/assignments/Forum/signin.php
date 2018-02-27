@@ -18,7 +18,7 @@
     <h3>Already a member? Signin!</h3>
     <div id="signin">
         <form action="signinConfirmation.php" method="post">
-            Username: <input name="userName" type="text" /><br />
+            Username: <input name="username" type="text" /><br />
             Password: <input name="password" type="password" /><br />
             <input type="submit" />
         </form>
