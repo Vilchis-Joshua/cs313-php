@@ -18,19 +18,15 @@
 		<?php
 		
             include('php/AccessDb.php');
-			if (isset($_SESSION['stmt']) && !empty($_SESSION['stmt'])) {
-				unset($_SESSION['stmt']);
-			}
 			if (isset($_SESSION['stmt2']) && !empty($_SESSION['stmt2'])) {
 				unset($_SESSION['stmt2']);
 			}
+
 			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			$stmt->execute();
-#			$temp1 = $pdo->lastInsertId(users_users_id_seq);
-#			$_SESSION['stmt'] = $temp1;
 			$stmt2 = $db->prepare("SELECT post_date, post_content  FROM post");
 			$stmt2->execute();
-#			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
+			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
 	
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				echo '<h2>' . $row['discussion_title'] . '</h2><br />';
