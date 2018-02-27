@@ -109,3 +109,10 @@ INSERT INTO DISCUSSION VALUES(
    (SELECT now()),
    'For this initial post, I just want to point out that there are many who do not believe that cyberbullying is real or a problem. We do however know, and we want to spread the word'
 );
+
+
+INSERT INTO FORUM VALUES(
+   DEFAULT,
+   (SELECT users_id FROM USERS WHERE users_username = 'a'),
+   (SELECT post_id FROM POST WHERE post_content = 'Hello, I believe in you')
+);

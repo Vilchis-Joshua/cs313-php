@@ -49,7 +49,9 @@
 					</div>';
 				$_SESSION['stmt2'] = $db->lastInsertId(post_post_id_seq);
 
-				$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, :users, :post)");
+				$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, 
+				(SELECT users_id FROM USERS WHERE users_username = :users),
+				:post)");
 				$InsertStmt->bindValue(':users', $_SESSION['username']);
 				$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
 				$InsertStmt->execute();
