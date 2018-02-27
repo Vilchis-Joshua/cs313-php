@@ -24,7 +24,7 @@
 			if (isset($_SESSION['stmt2']) && !empty($_SESSION['stmt2'])) {
 				unset($_SESSION['stmt2']);
 			}
-			$stmt = $db->prepare("SELECT discussion_title, discussion_date, discussion_initial_content FROM discussion");
+			$stmt = $db->prepare("SELECT discussion_id, discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			$stmt->execute();
 #			$temp1 = $pdo->lastInsertId(users_users_id_seq);
 #			$_SESSION['stmt'] = $temp1;
@@ -36,16 +36,23 @@
 				echo '<h2>' . $row['discussion_title'] . '</h2><br />';
 				echo '<h3>' . $row['discussion_initial_content'] . '</h3><br />';
 				echo '<p>';
-				//echo $row['users_username'] . ' - ' . $row['users_password'];
 				echo '</p>';
 			}
 
 			while ($row = $stmt2->fetch(PDO::FETCH_ASSOC)) {
 				echo '<p>';
-					echo '<b>' . $row['post_date'] . ' :</b><br /> ' . $row['post_content'];
+				echo '<b>' . $row['post_date'] . ' :</b><br /> ' . $row['post_content'];
 				echo '</p>';
 			}
-#
+
+
+				echo '<div>
+					<textarea name="comment" form="commentConf" >Enter text here...</textarea>
+					<form id="commentConf" action="commentConfirm.php" method="post">
+					<input type="submit" value="Post" >
+					</form>
+			       </div>';
+
 #			$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, :users, :post)");
 #			$InsertStmt->bindValue(':users', $_SESSION['stmt']);
 #			$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
