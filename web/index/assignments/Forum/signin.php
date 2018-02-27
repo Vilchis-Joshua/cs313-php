@@ -39,11 +39,10 @@
     </div>
 
     <div>
-        <p>Display data</p>
         <table>
             <?PHP
-            include('php/AccessDb.php');
-            include('php/user_list.php');
+#           include('php/AccessDb.php');
+#            include('php/user_list.php');
 #            foreach ($db->query('SELECT users_id, users_username, users_password FROM public.USERS') as $row) {
 #				echo '
 #				<tr><td>' . $row[users_id] . ') Username: ' . $row[users_username] . '<br />       password:' . $row[users_password] . '</td></tr>';
