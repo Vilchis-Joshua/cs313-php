@@ -11,7 +11,7 @@
 		if (!isset($_SESSION['username']) && empty($_SESSION['username'])) {
 			echo '<h2> Sign in </h2>';
 		} else {
-			header("Location: signin.php");
+			header("Location: mainpage.php");
 			die();
 		}
 	?>
