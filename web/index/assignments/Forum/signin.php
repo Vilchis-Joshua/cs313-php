@@ -7,8 +7,14 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-    <h2>Sign in</h2>
-
+	<?php
+		if (!isset($_SESSION['username']) && empty($_SESSION['username'])) {
+			echo '<h2> Sign in </h2>';
+		} else {
+			header("Location: signin.php");
+			die();
+		}
+	?>
     <nav id="navigation">
         <a href="mainpage.php">Main Page</a> |
         <a href="forum.php">Forum</a>
