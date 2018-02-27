@@ -60,6 +60,7 @@
 			} else {
 				echo '<br /><br /><b> You must log in to make a comment </b>';
 			}
+			echo 'working?';
 	    ?>
     </div>
     <div class="footer">
