@@ -39,10 +39,7 @@
 				echo '<b>' . $row['post_date'] . ' :</b><br /> ' . $row['post_content'];
 				echo '</p>';
 			}
-#			$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, :users, :post)");
-#			$InsertStmt->bindValue(':users', $_SESSION['stmt']);
-#			$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
-#			$InsertStmt->execute();
+
 			if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
 				echo '<div>
 						<textarea name="comment" form="commentConf" >Enter text here...</textarea>
@@ -54,7 +51,11 @@
 				echo '<br /><br /><b> You must log in to make a comment </b>';
 			}
 			$_SESSION['stmt2'] = $db->lastInsertId(post_post_id_seq);
-			echo 'another echo ' . $_SESSION['stmt2'];
+
+			$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, :users, :post)");
+			$InsertStmt->bindValue(':users', $_SESSION['username']);
+			$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
+			$InsertStmt->execute();
 	    ?>
     </div>
     <div class="footer">
