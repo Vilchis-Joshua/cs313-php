@@ -24,15 +24,13 @@
 			$un = htmlspecialchars($un);
 			$p = $_POST['password'];
 
-			#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
-			#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
+
 			try {
 				$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
 
 				$stmt->bindParam(':username', $username);
-				$stmt->bindParam(':password', $password);
+				$stmt->bindParam(':password', $hashpass);
 				$username = $un;
-				$password = $p;
 				$hashpass = password_hash($p, PASSWORD_DEFAULT);
 				$stmt->execute();
 			} catch (Exception $ex) {
@@ -41,7 +39,6 @@
 			}
 			header("Location: signin.php");
 			die();
-			$newId = $pdo->lastInsertId('users_id_sequence');			
 		?>
     </div>
 </body>
