@@ -16,13 +16,13 @@
 
 
     <h3>Already a member? Signin!</h3>
-    <div id="signin">
-        <form action="signinConfirmation.php" method="post">
-            Username: <input name="username" type="text" /><br />
-            Password: <input name="password" type="password" /><br />
-            <input type="submit" value="Sign in"/>
-        </form>
-    </div>
+	<div>
+		<form method="post" action="signinConfirmation.php">
+			Username: <input name="username" type="text" /><br />
+			password: <input name="password" type="password" /><br />
+            <input type="submit" value="Sign in" />
+		</form>
+	</div>
 
 
     <h3>Not a member? That's okay! Sign up below</h3>

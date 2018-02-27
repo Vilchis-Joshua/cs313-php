@@ -21,8 +21,16 @@
 
 			$row = $stmt->fetch();
 			$pass = $row['users_password'];
-			echo '1';
+
+			if (password_verify($p, $pass)) {
+				$_SESSION['username'] = $un;
+				header("Location: mainpage.php");
+				die();
+			} else {
+				echo 'it failed';
+			}
 		?>
     </div>
+</body>
 </body>
 </html>
