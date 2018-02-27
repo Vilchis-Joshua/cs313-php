@@ -20,13 +20,23 @@
 
 		$row = $stmt->fetch();
 		$pass = $row['users_password'];
+					echo '1';
 
 		if (password_verify($p, $pass)) {
+			echo '1';
 			$_SESSION['username'] = $un;
+						echo '1';
+
 			header("Location: mainpage.php");
+						echo '1';
+
 			die();
 		} else {
+					echo '1';
+
 			echo 'it failed';
+						echo '1';
+
 		}
 #		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue']))
 #			
