@@ -6,10 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/signup.css" />
     <script src="js/mainpage.js"></script>
 </head>
-<body>
-
-    <h2>Click confirm to confirm post</h2>
-	
+<body>	
     <div id="a">
 	<?php
 		$un = $_POST['username'];
