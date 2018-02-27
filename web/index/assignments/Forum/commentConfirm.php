@@ -7,13 +7,6 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-
-    <h2>Click confirm to confirm post</h2>
-	<div>
-		<form action="forum.php">
-			<input type="submit" value="Confirm" />
-		</form>
-	</div>
     <div id="a">
 		<?php
 			include('php/AccessDb.php');
@@ -32,6 +25,9 @@
 			$thisdate = $d;
 			$content = $c;
 			$stmt->execute();
+
+			header("Location: forum.php");
+			die();
 		?>
     </div>
 </body>

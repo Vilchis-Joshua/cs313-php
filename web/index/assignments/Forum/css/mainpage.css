@@ -25,6 +25,9 @@ h2 {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -43,5 +46,5 @@ a:hover, a:active {
 
 a:visited, a:link {
     text-decoration: none;
-    color: #FF3B3F;
+    color: #000080;
 }

@@ -46,8 +46,8 @@
         </p>
     </div>
     <div class="footer">
-        <a id="footerLink" href="../../index.html">Assignment Index</a>
-		<a href="php/signout.php">SignOut</a>
+        <a id="footerLink" href="../../index.html">Assignment Index</a> |
+		<a href="php/signout.php">Sign Out</a>
     </div>
 </body>
 </html>
