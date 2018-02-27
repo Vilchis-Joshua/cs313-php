@@ -20,7 +20,7 @@
         <form action="signinConfirmation.php" method="post">
             Username: <input name="username" type="text" /><br />
             Password: <input name="password" type="password" /><br />
-            <input type="submit" />
+            <input type="submit" value="Sign in"/>
         </form>
     </div>
 

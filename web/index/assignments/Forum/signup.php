@@ -14,7 +14,7 @@
         <form action="signupConfirmation.php" method="post">
 			<br />
 			Username: <input name="username" type="text" /><br />
-			password: <input name="password" type="password" />
+			password: <input name="password" type="password" /><br />
             <input type="submit" value="Sign up!" />
         </form>
     </div>
