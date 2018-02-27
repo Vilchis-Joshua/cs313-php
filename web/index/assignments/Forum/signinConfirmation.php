@@ -6,23 +6,30 @@
     <link rel="stylesheet" type="text/css" href="css/signup.css" />
     <script src="js/mainpage.js"></script>
 </head>
-<body>	
-    <div id="a">
-	<?php
-		$un = $_POST['username'];
-		$p = $_POST['password'];
+<body>
 
-		include('AccessDb.php');
+	<div id="a">
+		<?php
+			$un = $_POST['username'];
+			$p = $_POST['password'];
 
-		$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
-		$stmt->bindValue(':username', $un);
-		$stmt->execute();
+			include('AccessDb.php');
 
-		$row = $stmt->fetch();
-		$pass = $row['users_password'];
-					echo '1';
+			$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
+			$stmt->bindValue(':username', $un);
+			$stmt->execute();
 
-	?>
+			$row = $stmt->fetch();
+			$pass = $row['users_password'];
+
+			if (password_verify($p, $pass)) {
+				$_SESSION['username'] = $un;
+				header("Location: mainpage.php");
+				die();
+			} else {
+				echo 'it failed';
+			}
+		?>
     </div>
 </body>
 </html>
