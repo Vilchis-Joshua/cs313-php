@@ -28,8 +28,8 @@
 			$stmt->execute();
 #			$temp1 = $pdo->lastInsertId(users_users_id_seq);
 #			$_SESSION['stmt'] = $temp1;
-#			$stmt2 = $db->prepare("SELECT post_date, post_content  FROM post");
-#			$stmt2->execute();
+			$stmt2 = $db->prepare("SELECT post_date, post_content  FROM post");
+			$stmt2->execute();
 #			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
 	
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -44,15 +44,6 @@
 				echo '<b>' . $row['post_date'] . ' :</b><br /> ' . $row['post_content'];
 				echo '</p>';
 			}
-
-
-				echo '<div>
-					<textarea name="comment" form="commentConf" >Enter text here...</textarea>
-					<form id="commentConf" action="commentConfirm.php" method="post">
-					<input type="submit" value="Post" >
-					</form>
-			       </div>';
-
 #			$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, :users, :post)");
 #			$InsertStmt->bindValue(':users', $_SESSION['stmt']);
 #			$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
