@@ -48,13 +48,19 @@
 							</form>
 					</div>';
 				$_SESSION['stmt2'] = $db->lastInsertId(post_post_id_seq);
+				$temp1 = $db->lastInsertId(post_post_id_seq);
+				echo 'last insert: ' . $temp1;
+				$temp2 = $_SESSION['username'];
+				echo 'username: ' . $temp2;
 
 				$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, 
 				(SELECT users_id FROM USERS WHERE users_username = :users),
-				:post)");
-				$InsertStmt->bindValue(':users', $_SESSION['username']);
-				$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
+				(SELECT post_id FROM POST WHERE post_content = :post))");
+				$InsertStmt->bindValue(':users', $temp2);
+				$InsertStmt->bindValue(':post', $temp1);
 				$InsertStmt->execute();
+				if (isset($_SESSION['comment']) && !empty($_SESSION['comment']))
+					unset($_SESSION['comment']);
 			} else {
 				echo '<br /><br /><b> You must log in to make a comment </b>';
 			}

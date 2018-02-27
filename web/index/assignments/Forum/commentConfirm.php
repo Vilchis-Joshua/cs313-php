@@ -11,6 +11,7 @@
 		<?php
 			include('php/AccessDb.php');
 			$c = $_POST['comment'];
+			$_SESSION['comment'] = $c;
 			echo '<p>' . $c . '</p>';
 			$d;
 			foreach ($db->query('SELECT now()') as $row)
