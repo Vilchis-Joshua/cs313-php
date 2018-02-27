@@ -53,7 +53,7 @@
 			} else {
 				echo '<br /><br /><b> You must log in to make a comment </b>';
 			}
-			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
+			$_SESSION['stmt2'] = $db->lastInsertId(post_post_id_seq);
 			echo 'another echo ' . $_SESSION['stmt2'];
 	    ?>
     </div>
