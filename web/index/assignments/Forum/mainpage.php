@@ -7,7 +7,14 @@
     <script src="js/mainpage.js"></script>
 </head>
 <body>
-    <h2>Welcome to CBA</h2>
+	<?php
+		if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+			echo '<h2> Welcome to CBA, ' . $_SESSION['username'] . '</h2>';
+		} else {
+			header("Location: signin.php");
+			die();
+		}
+	?>
     <nav id="navigation">
         <a href="forum.php">Forum</a> |
         <a href="signin.php">Sign in</a>

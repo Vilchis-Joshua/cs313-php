@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Week03 Team Activity</title>
+    <title>Confirmation</title>
     <link rel="stylesheet" type="text/css" href="css/signup.css" />
     <script src="js/mainpage.js"></script>
 </head>
@@ -21,11 +21,20 @@
 		$_SESSION["userValue"] = $_POST['userName'];
 
 
-		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue'])) {
-			$result = pg_query($db, 'SELECT users_id FROM USERS WHERE users_username = '); 
-		} else {
-			echo 'You are already logged in.';
-		}
+			$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
+			$stmt->bindValue(':username', $un);
+			$stmt->execute();
+
+			$row = $stmt->fetch();
+			$pass = $row['users_password'];
+
+			if (password_verify($p, $pass)) {
+				$_SESSION['username'] = $un;
+				header("Location: week07.php");
+				die();
+			} else {
+				echo 'it failed';
+			}
 #		if (!isset($_SESSION['userValue']) && empty($_SESSION['userValue']))
 #			
 #			$_SESSION["userValue"] = $_POST['userName'];

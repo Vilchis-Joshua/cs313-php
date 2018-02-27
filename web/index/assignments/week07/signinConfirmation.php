@@ -22,12 +22,11 @@
 
 			if (password_verify($p, $pass)) {
 				$_SESSION['username'] = $un;
-				header("Location: week07.php");
+				header("Location: mainpage.php");
 				die();
 			} else {
 				echo 'it failed';
 			}
-			$newId = $pdo->lastInsertId('users_id_sequence');			
 		?>
     </div>
 </body>
