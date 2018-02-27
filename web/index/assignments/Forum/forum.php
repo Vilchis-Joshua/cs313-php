@@ -27,7 +27,7 @@
 			$stmt = $db->prepare("SELECT discussion_title, discussion_date, discussion_initial_content FROM discussion");
 			$stmt->execute();
 			$temp1 = $pdo->lastInsertId(users_users_id_seq);
-			$_SESSION['stmt'] = $temp1
+			$_SESSION['stmt'] = $temp1;
 #			$stmt2 = $db->prepare("SELECT post_date, post_content  FROM post");
 #			$stmt2->execute();
 #			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
