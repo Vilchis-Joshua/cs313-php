@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
-    "\\.git",
+    "",
     "\\web",
     "\\web\\index",
-    "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\Forum"
+    "\\web\\index\\assignments"
   ],
-  "SelectedNode": "\\.git\\config",
+  "SelectedNode": "\\output.sql",
   "PreviewInSolutionExplorer": false
 }

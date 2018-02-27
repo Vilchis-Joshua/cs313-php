@@ -37,6 +37,14 @@
             <input type="submit" value="Sign up!" />
         </form>
     </div>
+	
+	<div>
+	<br /><br />
+	<p>Did you forget your password?</p>
+	<form action="forgot.php">
+		<input type="submit" value="Forgot" />
+	</form>
+	</div>
 
     <div>
         <table>

@@ -27,6 +27,17 @@
 			$content = $c;
 			$stmt->execute();
 
+
+
+			$_SESSION['stmt2'] = $db->lastInsertId(post_post_id_seq);
+			$temp1 = $db->lastInsertId(post_post_id_seq);
+			$InsertStmt = $db->prepare("INSERT INTO FORUM VALUES (DEFAULT, 
+			(SELECT users_id FROM USERS WHERE users_username = :users),
+			(SELECT post_id FROM POST WHERE post_content = :post))");
+			$InsertStmt->bindValue(':users', $temp2);
+			$InsertStmt->bindValue(':post', $temp1);
+			$InsertStmt->execute();
+
 			header("Location: forum.php");
 			die();
 		?>
