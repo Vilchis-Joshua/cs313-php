@@ -11,7 +11,7 @@
 			$un = $_POST['username'];
 			$p = $_POST['password'];
 
-			include('AccessDb.php');
+			include('php/AccessDb.php');
 
 			$stmt = $db->prepare('SELECT users_password FROM USERS WHERE users_username = :username');
 			$stmt->bindValue(':username', $un);
