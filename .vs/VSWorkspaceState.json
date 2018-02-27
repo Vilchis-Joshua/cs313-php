@@ -3,8 +3,10 @@
     "",
     "\\web",
     "\\web\\index",
-    "\\web\\index\\assignments"
+    "\\web\\index\\assignments",
+    "\\web\\index\\assignments\\Forum",
+    "\\web\\index\\assignments\\week07"
   ],
-  "SelectedNode": "\\output.sql",
+  "SelectedNode": "\\web\\index\\assignments\\week07\\signupConfirmation.php",
   "PreviewInSolutionExplorer": false
 }
