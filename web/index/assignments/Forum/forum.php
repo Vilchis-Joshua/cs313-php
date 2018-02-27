@@ -50,22 +50,18 @@
 #			$InsertStmt->bindValue(':users', $_SESSION['stmt']);
 #			$InsertStmt->bindValue(':post', $_SESSION['stmt2']);
 #			$InsertStmt->execute();
+			if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+				echo '<div>
+						<textarea name="comment" form="commentConf" >Enter text here...</textarea>
+							<form id="commentConf" action="commentConfirm.php" method="post">
+								<input type="submit" value="Post" >
+							</form>
+					</div>';
+			} else {
+				echo '<br /><br /><b> You must log in to make a comment </b>';
+			}
 	    ?>
     </div>
-
-	<?php
-		if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
-			echo '<div>
-					<textarea name="comment" form="commentConf" >Enter text here...</textarea>
-						<form id="commentConf" action="commentConfirm.php" method="post">
-							<input type="submit" value="Post" >
-						</form>
-				</div>';
-		} else {
-			echo '<br /><br /><b> You must log in to make a comment </b>';
-		}
-	?>
-
     <div class="footer">
         <a id="footerLink" href="../../index.html">Assignment Index</a> | 
 		<a href="php/signout.php">Sign Out</a>
