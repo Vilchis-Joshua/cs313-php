@@ -21,17 +21,26 @@
 			echo "Welcome " . $_POST['username'] . '<br />';
 			echo "Your password is: " . $_POST['password'] . '<br />';
 			$un = $_POST['username'];
+			$un = htmlspecialchars($uns);
 			$p = $_POST['password'];
 
 			#GRANT SELECT, INSERT, UPDATE ON TABLES IN SCHEMA public TO postgres;
 			#GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO postgres;
-			$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
+			try {
+				$stmt = $db->prepare("INSERT INTO public.USERS (users_username, users_password) VALUES (:username, :password)");
 
-			$stmt->bindParam(':username', $username);
-			$stmt->bindParam(':password', $password);
-			$username = $un;
-			$password = $p;
-			$stmt->execute();
+				$stmt->bindParam(':username', $username);
+				$stmt->bindParam(':password', $password);
+				$username = $un;
+				$password = $p;
+				$hashpass = password_hash($p, PASSWORD_DEFAULT);
+				$stmt->execute();
+			} catch (Exception $ex) {
+				echo "Error: " . $ex;
+				die();
+			}
+			header("Location: signin.php");
+			die();
 			$newId = $pdo->lastInsertId('users_id_sequence');			
 		?>
     </div>
