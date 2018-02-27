@@ -10,11 +10,6 @@
 
     <h2>Click confirm to confirm post</h2>
 	
-	<div>
-		<form action="forum.php">
-			<input type="submit" value="Confirm" />
-		</form>
-	</div>
     <div id="a">
 	<?php
 		$un = $_POST['username'];
