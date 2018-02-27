@@ -99,3 +99,13 @@ TRUNCATE POST CASCADE;
 ALTER SEQUENCE post_post_id_seq RESTART;
 TRUNCATE USERS CASCADE;
 ALTER SEQUENCE users_users_id_seq RESTART;
+
+
+
+-- Discussion insert
+INSERT INTO DISCUSSION VALUES(
+   DEFAULT,
+   'Cyberbullying - Myth or real?',
+   (SELECT now()),
+   'For this initial post, I just want to point out that there are many who do not believe that cyberbullying is real or a problem. We do however know, and we want to spread the word'
+);
