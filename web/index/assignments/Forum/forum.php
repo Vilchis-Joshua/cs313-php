@@ -26,7 +26,6 @@
 			$stmt->execute();
 			$stmt2 = $db->prepare("SELECT post_date, post_content  FROM post");
 			$stmt2->execute();
-			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
 	
 			while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				echo '<h2>' . $row['discussion_title'] . '</h2><br />';
@@ -54,7 +53,8 @@
 			} else {
 				echo '<br /><br /><b> You must log in to make a comment </b>';
 			}
-			echo 'working?';
+			$_SESSION['stmt2'] = $pdo->lastInsertId(post_post_id_seq);
+			echo 'another echo ' . $_SESSION['stmt2'];
 	    ?>
     </div>
     <div class="footer">

@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
-    "",
+    "\\.git",
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week07"
+    "\\web\\index\\assignments\\Forum"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week07\\signin.php",
+  "SelectedNode": "\\.git\\config",
   "PreviewInSolutionExplorer": false
 }
