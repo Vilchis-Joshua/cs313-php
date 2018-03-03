@@ -4,8 +4,9 @@
     "\\web",
     "\\web\\index",
     "\\web\\index\\assignments",
-    "\\web\\index\\assignments\\week08"
+    "\\web\\index\\assignments\\week08",
+    "\\web\\index\\assignments\\week09"
   ],
-  "SelectedNode": "\\web\\index\\assignments\\week08\\filteredis.js",
+  "SelectedNode": "\\web\\index\\assignments\\week08\\main.js",
   "PreviewInSolutionExplorer": false
 }
