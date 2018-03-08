@@ -3,8 +3,9 @@
     "",
     "\\web",
     "\\web\\index",
-    "\\web\\index\\assignments"
+    "\\web\\index\\assignments",
+    "\\web\\index\\assignments\\myapp"
   ],
-  "SelectedNode": "\\web",
+  "SelectedNode": "\\web\\index\\assignments\\week09",
   "PreviewInSolutionExplorer": false
 }
