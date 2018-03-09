@@ -22,7 +22,6 @@ function calculateRate(req, res) {
     var result = 0;
     var weight = path.query.weight;
 
-    console.log(lt);
     if (lt === 'stamped') {
         //console.log(opOne + opTwo);
         if (Number(weight) <= 1 && Number(weight) > 0) {
